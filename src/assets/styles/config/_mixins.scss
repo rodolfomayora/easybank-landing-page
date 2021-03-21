@@ -1,0 +1,19 @@
+// Responsive Mixins
+// Responsive Method: FIRST MOBILE
+@mixin medium {
+  @media screen and (min-width: $medium) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: $large) {
+    @content;
+  }
+}
+
+@mixin responsiveExtra($breakpoint) {
+  @media screen and (min-width: $breakpoint) {
+    @content;
+  }
+}

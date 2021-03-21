@@ -1,0 +1,17 @@
+html * {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-family: 'Public Sans', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+body { min-height: 100vh; }
+
+img,
+figure {
+  max-width: 100%;
+  height: auto;
+}
