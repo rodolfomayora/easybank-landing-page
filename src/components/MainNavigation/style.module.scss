@@ -1,0 +1,26 @@
+@import '../../assets/styles/config.scss';
+
+.MainNavigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 265px;
+  padding: 32px;
+  background-color: $white;
+  border-radius: 4px;
+  transform: translateY(-140%);
+  will-change: transform;
+  animation: navDown 0.4s linear 0s 1 normal forwards;
+
+  .navItem {
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: -0.4px;
+    color: $blue-1;
+  }
+}
+
+@keyframes navDown {
+  0% { transform: translateY(-140%); }
+  100% { transform: translateY(0%); }
+}

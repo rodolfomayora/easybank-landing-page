@@ -13,7 +13,7 @@ export { ReactComponent as ApiIcon } from './svg/icon-api.svg';
 export { ReactComponent as BudgetingIncon } from './svg/icon-budgeting.svg';
 export { ReactComponent as CloseIcon } from './svg/icon-close.svg';
 export { ReactComponent as FacebookIcon } from './svg/icon-facebook.svg';
-export { ReactComponent as hamburgerIcon } from './svg/icon-hamburger.svg';
+export { ReactComponent as HamburgerIcon } from './svg/icon-hamburger.svg';
 export { ReactComponent as InstagramIcon } from './svg/icon-instagram.svg';
 export { ReactComponent as OnboardingIcon } from './svg/icon-onboarding.svg';
 export { ReactComponent as OnlineIcon } from './svg/icon-online.svg';

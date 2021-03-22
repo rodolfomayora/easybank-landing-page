@@ -1,12 +1,13 @@
 import React from 'react';
 import './assets/styles/style.global.scss';
+import { Layout, Container } from './components';
 
 const App = () => (
-  <div className="App">
-    <header className="App-header">
-        Learn React
-    </header>
-  </div>
+  <Layout >
+    <Container>
+      <h1>EasyBank Content</h1>
+    </Container>
+  </Layout>
 );
 
 export default App;

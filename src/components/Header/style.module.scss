@@ -1,0 +1,28 @@
+@import '../../assets/styles/config';
+
+.Header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: $headerHeight;
+  background-color: $white;
+  box-shadow: 0 0 1px $blue-2;
+
+  & > * {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s linear;
+
+    &.active { transform: rotate(90deg); }
+  }
+}

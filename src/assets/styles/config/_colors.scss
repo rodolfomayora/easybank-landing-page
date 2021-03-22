@@ -5,6 +5,10 @@ $cyan  : hsl(192, 70%, 51%);
 
 // Neutral
 $blue-2: hsl(233, 8%, 62%);
-$glue-3: hsl(220, 16%, 96%);
-$gray  : hsl(0, 0%, 98%);
-$White : hsl(0, 0%, 100%);
+$glue-3: hsl(220, 16%, 96%); // content
+$gray  : hsl(0, 0%, 98%); // content
+$white : hsl(0, 0%, 100%);
+
+// Extra
+$blue-4: hsla(233, 26%, 24%, 0.5);
+$transparent: hsla(233, 26%, 24%, 0.1);
