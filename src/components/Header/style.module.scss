@@ -11,6 +11,7 @@
   background-color: $white;
   box-shadow: 0 0 1px $blue-2;
 
+  // container
   & > * {
     flex-grow: 1;
     display: flex;
@@ -18,11 +19,35 @@
     align-items: center;
   }
 
-  .button {
+  .navigationMenu {
+    display: flex;
+    align-self: stretch;
+  }
+
+  .navigationMenu,
+  .buttonInvitation {
+    @include hiddenFlexElement;
+  }
+
+  .buttonMenu {
     display: flex;
     align-items: center;
     transition: transform 0.2s linear;
 
     &.active { transform: rotate(90deg); }
+  }
+
+
+  @include large {
+    height: $headerHeightDektop;
+
+    .navigationMenu,
+    .buttonInvitation {
+      @include showFlexElement;
+    }
+
+    .buttonMenu {
+      @include hiddenFlexElement;
+    }
   }
 }

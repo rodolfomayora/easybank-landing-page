@@ -1,4 +1,4 @@
-@import '../../assets/styles/config.scss';
+@import '../../assets/styles/config';
 
 .MainNavigation {
   display: flex;
@@ -18,9 +18,49 @@
     letter-spacing: -0.4px;
     color: $blue-1;
   }
-}
 
-@keyframes navDown {
-  0% { transform: translateY(-140%); }
-  100% { transform: translateY(0%); }
+  @include large {
+    flex-direction: row;
+    justify-content: flex-start;
+    height: auto;
+    padding: 0;
+    background-color: hsla(0, 0%, 100%, 0);
+    transform: none;
+    animation: none;
+
+    .navItem {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 16px;
+      padding-right: 16px;
+      font-size: 14px;
+      letter-spacing: 0;
+      color: $blue-2;
+      transition: color 0.2s linear;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0; 
+        right: 0;
+        height: 4px;
+        background-image: linear-gradient(90deg, $green, $cyan);
+        filter: opacity(0);
+        transition: filter 0.2s linear;
+      }
+
+      &:hover {
+        color: $blue-1;
+
+        &:after { filter: opacity(1); }
+      }
+    }
+  }
+
+  @keyframes navDown {
+    0% { transform: translateY(-140%); }
+    100% { transform: translateY(0%); }
+  }
 }

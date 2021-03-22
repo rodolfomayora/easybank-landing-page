@@ -4,4 +4,8 @@
   min-height: 100vh;
   margin-top: $headerHeight;
   background-color: $gray;
+
+  @include large {
+    margin-top: $headerHeightDektop;
+  }
 }
