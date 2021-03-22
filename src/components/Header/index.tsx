@@ -1,6 +1,7 @@
 import React, { FC, useState } from 'react';
 import Container from '../Container';
 import Modal from '../Modal';
+import MainNavigation from '../MainNavigation';
 import { Logo, HamburgerIcon, CloseIcon } from '../../assets/img';
 import style from './style.module.scss';
 
@@ -30,7 +31,7 @@ const Header: FC = () => {
       {
         isMenuOpen &&
         <Modal>
-          CONTENIDO
+          <MainNavigation />
         </Modal>
       }
       </Container>

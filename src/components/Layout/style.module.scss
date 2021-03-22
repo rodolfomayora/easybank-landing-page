@@ -1,0 +1,7 @@
+@import '../../assets/styles/config.scss';
+
+.MainContent {
+  min-height: 100vh;
+  margin-top: $headerHeight;
+  background-color: $gray;
+}
