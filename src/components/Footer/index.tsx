@@ -12,11 +12,15 @@ const Footer: FC = () => (
       <div className={style.logo}>
         <Logo /> 
       </div>
-      <SocialLinks />
-      
-      <SecondNavigation />
-
-      <ButtonInvitation />
+      <div>
+        <SocialLinks />
+      </div>
+      <div>
+        <SecondNavigation />
+      </div>
+      <div>
+        <ButtonInvitation />
+      </div>
       <small className={style.copyright}>
         &copy; Easybank. All Rights Reserved
       </small>

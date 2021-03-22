@@ -13,47 +13,20 @@
     font-size: 15px;
     font-weight: 300;
     line-height: 18px;
-    // letter-spacing: 0px;
     color: $white;
+    transition: color 0.2s linear;
+
+    &:hover { color: $green; }
   }
 
-  // @include large {
-  //   flex-direction: row;
-  //   justify-content: flex-start;
-  //   height: auto;
-  //   padding: 0;
-  //   background-color: hsla(0, 0%, 100%, 0);
-  //   transform: none;
-  //   animation: none;
+  @include medium {
+    flex-wrap: wrap;
+    height: 102px;
 
-  //   .navItem {
-  //     position: relative;
-  //     display: flex;
-  //     align-items: center;
-  //     padding-left: 16px;
-  //     padding-right: 16px;
-  //     font-size: 14px;
-  //     letter-spacing: 0;
-  //     color: $blue-2;
-  //     transition: color 0.2s linear;
+    .navItem {
+      text-align: left;
 
-  //     &:after {
-  //       content: '';
-  //       position: absolute;
-  //       bottom: 0;
-  //       left: 0; 
-  //       right: 0;
-  //       height: 4px;
-  //       background-image: linear-gradient(90deg, $green, $cyan);
-  //       filter: opacity(0);
-  //       transition: filter 0.2s linear;
-  //     }
-
-  //     &:hover {
-  //       color: $blue-1;
-
-  //       &:after { filter: opacity(1); }
-  //     }
-  //   }
-  // }
+      &:nth-of-type(n + 4) { margin-left: 128px; }
+    }
+  }
 }
