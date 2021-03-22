@@ -1,0 +1,16 @@
+@import '../../assets/styles/config.scss';
+
+.ButtonInvitation {
+  display: inline-block;
+  width: 164px;
+  text-align: center;
+  line-height: 44px;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: $white;
+  background-image: linear-gradient(90deg, $green, $cyan);
+  border-radius: 22px;
+  transition: filter 0.2s linear;
+
+  &:hover { filter: opacity(0.7); }
+}
