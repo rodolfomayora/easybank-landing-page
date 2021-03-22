@@ -4,4 +4,6 @@ export { default as Header } from './Header';
 export { default as Footer } from './Footer';
 export { default as Layout } from './Layout';
 export { default as MainNavigation } from './MainNavigation';
+export { default as SecondNavigation } from './SecondNavigation';
 export { default as ButtonInvitation } from './ButtonInvitation';
+export { default as SocialLinks } from './SocialLinks';

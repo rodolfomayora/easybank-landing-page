@@ -1,0 +1,9 @@
+.SocialLinks {
+  
+  :first-child ~ * { margin-left: 20px; }
+
+  & > * > * {
+    transform: scale(1.2);
+    margin-bottom: -4px;
+  }
+}
