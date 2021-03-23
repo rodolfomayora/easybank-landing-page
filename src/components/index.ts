@@ -7,3 +7,4 @@ export { default as MainNavigation } from './MainNavigation';
 export { default as SecondNavigation } from './SecondNavigation';
 export { default as ButtonInvitation } from './ButtonInvitation';
 export { default as SocialLinks } from './SocialLinks';
+export { default as FeatureBlock } from './FeatureBlock';

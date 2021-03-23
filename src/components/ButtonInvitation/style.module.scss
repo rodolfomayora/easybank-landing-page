@@ -13,6 +13,7 @@
   color: $white;
   background-image: linear-gradient(90deg, $green, $cyan);
   border-radius: 22px;
+  overflow: hidden;
   transition: filter 0.2s linear;
 
   &:before {
