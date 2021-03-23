@@ -1,9 +1,9 @@
 // Static
 export { default as mokcups } from './static/image-mockups.png';
-export { default as ariticleImage1 } from './static/image-currency.jpg';
-export { default as ariticleImage2 } from './static/image-restaurant.jpg';
-export { default as ariticleImage3 } from './static/image-plane.jpg'
-export { default as ariticleImage4 } from './static/image-confetti.jpg';
+export { default as articleImage1 } from './static/image-currency.jpg';
+export { default as articleImage2 } from './static/image-restaurant.jpg';
+export { default as articleImage3 } from './static/image-plane.jpg'
+export { default as articleImage4 } from './static/image-confetti.jpg';
 
 // SVG
 export { ReactComponent as Logo } from './svg/logo.svg';

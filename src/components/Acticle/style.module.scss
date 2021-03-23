@@ -1,0 +1,58 @@
+@import '../../assets/styles/config';
+
+.Acticle {
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: $white;
+  box-shadow: 0 0 10px hsl(0, 0%, 87%);
+
+  .imageBase {
+    width: 100%;
+  }
+
+  .imageLayer {
+    position: relative;
+    // equivalent to 200px
+    padding-top: 61.6%;
+  }
+
+  .imageWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .overview { padding: 30px; }
+
+  .author { font-size: 10px; }
+
+  .title {
+    padding-top: 12px;
+    font-size: 16px;
+    font-weight: 400;
+    color: $blue-1;
+    letter-spacing: -0.3px;
+    line-height: 20px;
+  }
+
+  .paragraph {
+    padding-top: 10px;
+    font-size: 13px;
+    letter-spacing: -0.2px;
+    line-height: 18px;
+
+    // truncate and allipsis
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+}

@@ -49,7 +49,7 @@ const FeatureSection: FC = () => {
           {
             features.map(({ id, title, description, icon }: any) => (
               <FeatureBlock
-                key={id}
+                key={id.toString()}
                 title={title}
                 description={description}
                 icon={icon}
