@@ -7,9 +7,13 @@ html * {
   font-family: 'Public Sans', Arial, Helvetica, sans-serif;
   font-size: 18px;
   color: $blue-2;
+  overflow-x: hidden;
 }
 
-body { min-height: 100vh; }
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
 
 img,
 figure {

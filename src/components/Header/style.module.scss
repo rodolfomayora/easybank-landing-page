@@ -9,7 +9,6 @@
   display: flex;
   height: $headerHeight;
   background-color: $white;
-  box-shadow: 0 0 1px $blue-2;
 
   // container
   & > * {
@@ -41,6 +40,7 @@
   @include large {
     height: $headerHeightDektop;
 
+    .navigationMenu { margin-right: -20px; }
     .navigationMenu,
     .buttonInvitation {
       @include showFlexElement;

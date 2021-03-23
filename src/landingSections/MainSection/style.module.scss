@@ -1,9 +1,11 @@
 @import '../../assets/styles/config';
 
 .MainSection {
+  position: relative;
   display: flex;
   flex-direction: column;
-  min-height: calc(100vh - #{$headerHeight});
+  height: calc(100vh - #{$headerHeight});
+  background-color: $gray;
 
   .imageBase {
     width: 100%;
@@ -36,6 +38,8 @@
     width: 92%;
     bottom: 0;
   }
+
+  .mockupsDesktop { display: none; }
 
   // container
   & > :nth-child(2) {
@@ -70,6 +74,68 @@
 
 
   @include large {
+    position: relative;
+    flex-direction: row-reverse;
     height: calc(100vh - #{$headerHeightDektop});
+    max-height: 900px;
+
+    .imageBase {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 56.6%;
+    }
+
+    .imageLayer {
+      height: 100%;
+      padding-top: 0;
+      margin-top: 0;
+    }
+
+    .imageBackground {
+      position: absolute;
+      left: 0;
+      top: 38%;
+      transform: translateY(-50%);
+      height: 152%;
+      background:
+        url('../../assets/img/svg/bg-intro-desktop.svg')
+        no-repeat
+        scroll
+        0 0 / cover;
+    }
+
+    .mockups { display: none; }
+
+    .mockupsDesktop {
+      position: absolute;
+      display: inline-block;
+      right: 0px;
+      top: 50%;
+      transform: translate(17%, -48%);
+      width: 53%
+    }
+
+    .introInformation {
+      width: 440px;
+      padding-bottom: 46px;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .mainTitle {
+      margin-bottom: 26px;
+      font-size: 54px;
+      line-height: 64px;
+      font-weight: 400;
+    }
+
+    .information {
+      margin-bottom: 34px;
+      font-size: 18px;
+      line-height: 28px;
+    }
   }
 }

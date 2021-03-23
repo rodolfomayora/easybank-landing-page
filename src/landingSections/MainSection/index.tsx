@@ -14,6 +14,7 @@ const MainSection: FC = () => (
         />
       </div>
     </div>
+    
     <Container>
       <div className={style.introInformation}>
         <h1 className={style.mainTitle}>Next generation digital banking</h1>
@@ -21,6 +22,11 @@ const MainSection: FC = () => (
         <ButtonInvitation />
       </div>
     </Container>
+
+    <img className={style.mockupsDesktop}
+      src={mokcups}
+      alt="App Mockup"
+    />
   </section>
 )
 
