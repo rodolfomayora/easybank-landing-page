@@ -25,4 +25,18 @@
     align-items: flex-start;
     text-align: left;
   }
+
+  @include large {
+    .featureTittle {
+      margin-top: 40px;
+      font-size: 24px;
+    }
+
+    .featureDescription {
+      margin-top: 24px;
+      font-size: 16px;
+      letter-spacing: -0.1px;
+      line-height: 27px;
+    }
+  }
 }

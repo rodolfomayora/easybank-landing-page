@@ -8,3 +8,4 @@ export { default as SecondNavigation } from './SecondNavigation';
 export { default as ButtonInvitation } from './ButtonInvitation';
 export { default as SocialLinks } from './SocialLinks';
 export { default as FeatureBlock } from './FeatureBlock';
+export { default as GridLayout } from './GridLayout';

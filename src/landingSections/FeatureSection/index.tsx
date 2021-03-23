@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { Container, FeatureBlock } from '../../components';
+import { Container, FeatureBlock, GridLayout } from '../../components';
 import {
   OnlineIcon,
   BudgetingIncon,
@@ -14,7 +14,7 @@ const FeatureSection: FC = () => {
     {
       id: 1,
       title: "Online Banking",
-      description: "Our modern web and mobile appications allow you to keep track of your finances wherever you are in the world",
+      description: "Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world",
       icon: OnlineIcon,
     },
     {
@@ -40,19 +40,23 @@ const FeatureSection: FC = () => {
   return (
     <section className={style.FeatureSection}>
       <Container>
-        <h2>Why shoose Easybank</h2>
-        <p>We leverage Open Banking to turn your bank account into your financial hub. <br/> Control your finances like never before</p>
+        <h2 className={style.sectionTitle}>Why choose Easybank?</h2>
+        <p className={style.sectionDescription}>
+          We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before
+        </p>
         <div>
-        {
-          features.map(({ id, title, description, icon }: any) => (
-            <FeatureBlock
-              key={id}
-              title={title}
-              description={description}
-              icon={icon}
-            />
-          ))
-        }
+          <GridLayout>
+          {
+            features.map(({ id, title, description, icon }: any) => (
+              <FeatureBlock
+                key={id}
+                title={title}
+                description={description}
+                icon={icon}
+              />
+            ))
+          }
+          </GridLayout>
         </div>
       </Container>
     </section>

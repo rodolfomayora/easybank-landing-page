@@ -1,6 +1,44 @@
 @import '../../assets/styles/config.scss';
 
 .FeatureSection {
-
+  padding: 66px 0;
   background-color: $blue-3;
+  text-align: center;
+
+
+  .sectionTitle {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    color: $blue-1;
+    margin-bottom: 20px;
+  }
+
+  .sectionDescription {
+    font-size: 15px;
+    letter-spacing: -0.4px;
+    line-height: 24px;
+    margin-bottom: 60px;
+  }
+
+  @include large {
+    padding-top: 106px;
+    text-align: left;
+
+    .sectionTitle {
+      font-size: 40px;
+      line-height: 44px;
+      letter-spacing: -0.8px;
+      margin-bottom: 26px;
+    }
+
+    .sectionDescription {
+      width: 620px;
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: -0.3px;
+      margin-bottom: 70px;
+    }
+  }
 }
