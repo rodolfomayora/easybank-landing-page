@@ -2,9 +2,9 @@ import React, { FC } from 'react';
 import style from './style.module.scss';
 
 const ButtonInvitation: FC = () => (
-  <span className={style.ButtonInvitation}>
+  <a className={style.ButtonInvitation} href="#0">
     Request Invite
-  </span>
+  </a>
 )
 
 export default ButtonInvitation;

@@ -7,8 +7,8 @@ export { default as ariticleImage4 } from './static/image-confetti.jpg';
 
 // SVG
 export { ReactComponent as Logo } from './svg/logo.svg';
-export { ReactComponent as IntroDesktop } from './svg/bg-intro-desktop.svg';
 export { ReactComponent as IntroMobile } from './svg/bg-intro-mobile.svg';
+export { ReactComponent as IntroDesktop } from './svg/bg-intro-desktop.svg';
 export { ReactComponent as ApiIcon } from './svg/icon-api.svg';
 export { ReactComponent as BudgetingIncon } from './svg/icon-budgeting.svg';
 export { ReactComponent as CloseIcon } from './svg/icon-close.svg';

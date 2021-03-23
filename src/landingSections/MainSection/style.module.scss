@@ -1,0 +1,75 @@
+@import '../../assets/styles/config';
+
+.MainSection {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - #{$headerHeight});
+
+  .imageBase {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .imageLayer {
+    position: relative;
+    padding-top: 96.6%;
+    margin-top: -62px;
+  }
+
+  .imageBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+      url('../../assets/img/svg/bg-intro-mobile.svg')
+      no-repeat
+      scroll
+      0 0 / cover;
+  }
+
+  .mockups {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 92%;
+    bottom: 0;
+  }
+
+  // container
+  & > :nth-child(2) {
+    flex-grow: 1;
+    display: flex;
+  }
+
+  .introInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+
+  .mainTitle {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 400;
+    color: $blue-1;
+  }
+
+  .information {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+  }
+
+
+  @include large {
+    height: calc(100vh - #{$headerHeightDektop});
+  }
+}
