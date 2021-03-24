@@ -38,7 +38,10 @@
 
   .overview { padding: 30px; }
 
-  .author { font-size: 10px; }
+  .author {
+    font-size: 10px;
+    color: $blue-2;  
+  }
 
   .titleWrapper {
     position: relative;
@@ -73,6 +76,7 @@
     font-size: 13px;
     letter-spacing: -0.2px;
     line-height: 18px;
+    color: $blue-2;  
 
     // truncate and allipsis
     display: -webkit-box;
