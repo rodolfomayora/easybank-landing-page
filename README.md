@@ -11,7 +11,7 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 ### Links
 
 - Solution URL: [https://github.com/rodolfomayora/easybank-landing-page.git](https://github.com/rodolfomayora/easybank-landing-page.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://rodolfomayora.github.io/easybank-landing-page/](https://rodolfomayora.github.io/easybank-landing-page/)
 
 
 ## My process
@@ -41,12 +41,12 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [TypeScript] (https://www.typescriptlang.org/) - JS Superset
+- [TypeScript](https://www.typescriptlang.org/) - JS Superset
 - [CSS Modules](https://github.com/css-modules/css-modules) - For Scoped styles
 
 
 ## Author
 
 - Website - [https://rodolfomayora.github.io/mi-portafolio/](https://rodolfomayora.github.io/mi-portafolio/)
-- Frontend Mentor - [https://www.frontendmentor.io/profile/rodolfomayora](https://www.frontendmentor.io/profile/rodolfomayora)
 - LinkedIn - [https://www.linkedin.com/in/rodolfo-mayora-pereda-desarrollador-web](https://www.linkedin.com/in/rodolfo-mayora-pereda-desarrollador-web)
+- Frontend Mentor - [https://www.frontendmentor.io/profile/rodolfomayora](https://www.frontendmentor.io/profile/rodolfomayora)
