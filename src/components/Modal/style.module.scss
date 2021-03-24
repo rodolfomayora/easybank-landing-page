@@ -1,0 +1,16 @@
+@import '../../assets/styles/config.scss';
+
+.Modal {
+  position: fixed;
+  z-index: 1;
+  top: $headerHeight;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-image: linear-gradient(180deg, $blue-4 70%, $transparent);
+
+  @include medium { top: $headerHeightDektop; }
+}

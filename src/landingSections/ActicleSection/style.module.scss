@@ -1,0 +1,25 @@
+@import '../../assets/styles/config.scss';
+
+.ActicleSection {
+  padding: 88px 0 80px;
+  background-color: $gray;
+
+
+  .sectionTitle {
+    margin-bottom: 32px;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 400;
+    letter-spacing: -0.6px;
+    color: $blue-1;
+    text-align: center;
+  }
+
+  @include large {
+    .sectionTitle {
+      text-align: left;
+      font-size: 40px;
+      margin-bottom: 52px;
+    }
+  }
+}
