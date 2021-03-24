@@ -16,7 +16,7 @@
 
   @include large {
     grid-row-gap: 0;
-    grid-column-gap: 23px;
+    grid-column-gap: 30px;
     grid-template-rows: repeat(1, auto);
     grid-template-columns: repeat(4, 1fr);
   }
