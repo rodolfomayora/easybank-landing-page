@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/easybank-landing-page/static/css/main.5573f194.chunk.css",
+    "main.css": "/easybank-landing-page/static/css/main.c9dcb197.chunk.css",
     "main.js": "/easybank-landing-page/static/js/main.a2aa44f9.chunk.js",
     "main.js.map": "/easybank-landing-page/static/js/main.a2aa44f9.chunk.js.map",
     "runtime-main.js": "/easybank-landing-page/static/js/runtime-main.d580bad3.js",
@@ -8,7 +8,7 @@
     "static/js/2.eadc5afa.chunk.js": "/easybank-landing-page/static/js/2.eadc5afa.chunk.js",
     "static/js/2.eadc5afa.chunk.js.map": "/easybank-landing-page/static/js/2.eadc5afa.chunk.js.map",
     "index.html": "/easybank-landing-page/index.html",
-    "static/css/main.5573f194.chunk.css.map": "/easybank-landing-page/static/css/main.5573f194.chunk.css.map",
+    "static/css/main.c9dcb197.chunk.css.map": "/easybank-landing-page/static/css/main.c9dcb197.chunk.css.map",
     "static/js/2.eadc5afa.chunk.js.LICENSE.txt": "/easybank-landing-page/static/js/2.eadc5afa.chunk.js.LICENSE.txt",
     "static/media/style.global.scss": "/easybank-landing-page/static/media/PublicSans-Regular.296b09a9.ttf",
     "static/media/style.module.scss": "/easybank-landing-page/static/media/external-link.c9ceb773.svg",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.d580bad3.js",
     "static/js/2.eadc5afa.chunk.js",
-    "static/css/main.5573f194.chunk.css",
+    "static/css/main.c9dcb197.chunk.css",
     "static/js/main.a2aa44f9.chunk.js"
   ]
 }
