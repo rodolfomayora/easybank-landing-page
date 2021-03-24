@@ -1,6 +1,6 @@
 import React from 'react';
 import './assets/styles/style.global.scss';
-import { Layout } from './components';
+import { Layout, AtributionBlock } from './components';
 import {
   MainSection,
   FeatureSection,
@@ -8,11 +8,14 @@ import {
 } from './landingSections';
 
 const App = () => (
-  <Layout>
-    <MainSection />
-    <FeatureSection />
-    <ActicleSection />
-  </Layout>
+  <>
+    <Layout>
+      <MainSection />
+      <FeatureSection />
+      <ActicleSection />
+    </Layout>
+    <AtributionBlock />
+  </>
 );
 
 export default App;

@@ -36,10 +36,11 @@
     &.active { transform: rotate(90deg); }
   }
 
+  
+  @include medium { height: $headerHeightDektop; }
+
 
   @include large {
-    height: $headerHeightDektop;
-
     .navigationMenu { margin-right: -20px; }
     .navigationMenu,
     .buttonInvitation {

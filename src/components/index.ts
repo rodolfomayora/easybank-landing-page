@@ -10,3 +10,4 @@ export { default as ButtonInvitation } from './ButtonInvitation';
 export { default as SocialLinks } from './SocialLinks';
 export { default as FeatureBlock } from './FeatureBlock';
 export { default as Acticle } from './Acticle';
+export { default as AtributionBlock } from './AtributionBlock';
