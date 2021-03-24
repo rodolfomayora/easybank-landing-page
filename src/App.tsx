@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './assets/styles/style.global.scss';
 import { Layout, AtributionBlock } from './components';
 import {
@@ -7,15 +7,24 @@ import {
   ActicleSection
 } from './landingSections';
 
-const App = () => (
-  <>
-    <Layout>
-      <MainSection />
-      <FeatureSection />
-      <ActicleSection />
-    </Layout>
-    <AtributionBlock />
-  </>
-);
+const App = () => {
+
+  useEffect(() => {
+    const loader: any = document.getElementById('loader');
+    loader?.classList.add("offLoader");
+    setTimeout(() => loader?.remove(), 1000);
+  }, [])
+
+  return (
+    <>
+      <Layout>
+        <MainSection />
+        <FeatureSection />
+        <ActicleSection />
+      </Layout>
+      <AtributionBlock />
+    </>
+  );
+}
 
 export default App;

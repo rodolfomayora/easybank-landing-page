@@ -1,46 +1,52 @@
-# Getting Started with Create React App
+# Frontend Mentor - Easybank landing page solution
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a solution to the [Easybank landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/easybank-landing-page-WaUhkoDN). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Available Scripts
 
-In the project directory, you can run:
+### Screenshot
 
-### `yarn start`
+![](./screenshot.jpg)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Links
 
-### `yarn test`
+- Solution URL: [https://github.com/rodolfomayora/easybank-landing-page.git](https://github.com/rodolfomayora/easybank-landing-page.git)
+- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## My process
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- ELP-0: Initial project configuration
+- ELP-1: Add assets (cambiar favicon)
+- ELP-2: Header and Navigation Mobile
+- ELP-3: ButtonInvitation Component
+- ELP-4: Header and Navigation Desktop
+- ELP-5: Footer Mobile
+- ELP-6: Footer Desktop
+- ELP-7: MainSection Mobile
+- ELP-8: MainSection Desktop
+- ELP-9: FeatureBlock Component
+- ELP-10: FeatureSection
+- ELP-11: Article Component
+- ELP-12: ArticleSection
+- ELP-13: AtributionBlock
+- ELP-14: Add Initial Loader
+- ELP-15: Deploy
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built with
 
-### `yarn eject`
+- Semantic HTML5 markup
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [TypeScript] (https://www.typescriptlang.org/) - JS Superset
+- [CSS Modules](https://github.com/css-modules/css-modules) - For Scoped styles
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Author
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Website - [https://rodolfomayora.github.io/mi-portafolio/](https://rodolfomayora.github.io/mi-portafolio/)
+- Frontend Mentor - [https://www.frontendmentor.io/profile/rodolfomayora](https://www.frontendmentor.io/profile/rodolfomayora)
+- LinkedIn - [https://www.linkedin.com/in/rodolfo-mayora-pereda-desarrollador-web](https://www.linkedin.com/in/rodolfo-mayora-pereda-desarrollador-web)
