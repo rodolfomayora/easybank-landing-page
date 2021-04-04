@@ -51,7 +51,7 @@
   .introInformation {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding-top: 20px;
@@ -60,6 +60,7 @@
   }
 
   .mainTitle {
+    margin-bottom: 7%;
     font-size: 38px;
     line-height: 48px;
     font-weight: 400;
@@ -67,7 +68,7 @@
   }
 
   .information {
-    margin-bottom: 20px;
+    margin-bottom: 7%;
     font-size: 15px;
     line-height: 24px;
     letter-spacing: -0.2px;
