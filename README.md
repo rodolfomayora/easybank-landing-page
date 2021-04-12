@@ -47,6 +47,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 ## Author
 
-- Website - [https://rodolfomayora.github.io/mi-portafolio/](https://rodolfomayora.github.io/mi-portafolio/)
+- Website - [https://rodolfo-mayora-pereda.vercel.app](https://rodolfo-mayora-pereda.vercel.app)
 - LinkedIn - [https://www.linkedin.com/in/rodolfo-mayora-pereda-desarrollador-web](https://www.linkedin.com/in/rodolfo-mayora-pereda-desarrollador-web)
 - Frontend Mentor - [https://www.frontendmentor.io/profile/rodolfomayora](https://www.frontendmentor.io/profile/rodolfomayora)
