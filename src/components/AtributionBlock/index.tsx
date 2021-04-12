@@ -15,7 +15,7 @@ const AtributionBlock: FC = () => {
       <br />
       Coded by
       <a
-        href="https://rodolfomayora.github.io/mi-portafolio/"
+        href="https://rodolfo-mayora-pereda.vercel.app"
         target="_blank"
         rel="external noopener noreferrer"
       >
