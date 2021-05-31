@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/easybank-landing-page/static/css/main.60f36e15.chunk.css",
-    "main.js": "/easybank-landing-page/static/js/main.45089d00.chunk.js",
-    "main.js.map": "/easybank-landing-page/static/js/main.45089d00.chunk.js.map",
-    "runtime-main.js": "/easybank-landing-page/static/js/runtime-main.d580bad3.js",
-    "runtime-main.js.map": "/easybank-landing-page/static/js/runtime-main.d580bad3.js.map",
-    "static/js/2.eadc5afa.chunk.js": "/easybank-landing-page/static/js/2.eadc5afa.chunk.js",
-    "static/js/2.eadc5afa.chunk.js.map": "/easybank-landing-page/static/js/2.eadc5afa.chunk.js.map",
+    "main.css": "/easybank-landing-page/static/css/main.4930dca2.chunk.css",
+    "main.js": "/easybank-landing-page/static/js/main.8653fadd.chunk.js",
+    "main.js.map": "/easybank-landing-page/static/js/main.8653fadd.chunk.js.map",
+    "runtime-main.js": "/easybank-landing-page/static/js/runtime-main.ddea301d.js",
+    "runtime-main.js.map": "/easybank-landing-page/static/js/runtime-main.ddea301d.js.map",
+    "static/js/2.5acee5d7.chunk.js": "/easybank-landing-page/static/js/2.5acee5d7.chunk.js",
+    "static/js/2.5acee5d7.chunk.js.map": "/easybank-landing-page/static/js/2.5acee5d7.chunk.js.map",
     "index.html": "/easybank-landing-page/index.html",
-    "static/css/main.60f36e15.chunk.css.map": "/easybank-landing-page/static/css/main.60f36e15.chunk.css.map",
-    "static/js/2.eadc5afa.chunk.js.LICENSE.txt": "/easybank-landing-page/static/js/2.eadc5afa.chunk.js.LICENSE.txt",
+    "static/css/main.4930dca2.chunk.css.map": "/easybank-landing-page/static/css/main.4930dca2.chunk.css.map",
+    "static/js/2.5acee5d7.chunk.js.LICENSE.txt": "/easybank-landing-page/static/js/2.5acee5d7.chunk.js.LICENSE.txt",
     "static/media/style.global.scss": "/easybank-landing-page/static/media/PublicSans-Regular.296b09a9.ttf",
     "static/media/style.module.scss": "/easybank-landing-page/static/media/external-link.c9ceb773.svg",
     "static/media/icon-api.74c8ad17.svg": "/easybank-landing-page/static/media/icon-api.74c8ad17.svg",
@@ -31,9 +31,9 @@
     "static/media/logo.4d7cebc5.svg": "/easybank-landing-page/static/media/logo.4d7cebc5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d580bad3.js",
-    "static/js/2.eadc5afa.chunk.js",
-    "static/css/main.60f36e15.chunk.css",
-    "static/js/main.45089d00.chunk.js"
+    "static/js/runtime-main.ddea301d.js",
+    "static/js/2.5acee5d7.chunk.js",
+    "static/css/main.4930dca2.chunk.css",
+    "static/js/main.8653fadd.chunk.js"
   ]
 }
