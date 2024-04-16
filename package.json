@@ -1,32 +1,37 @@
 {
   "name": "easybank-landing-page",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "homepage": "https://rodolfomayora.github.io/easybank-landing-page",
   "dependencies": {
-    "@types/gh-pages": "^3.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "gh-pages": "^3.1.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "4.0.3",
-    "typescript": "^4.1.2"
+    "gh-pages": "^6.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "dev": "PORT=3001 react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "prepare": "husky"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "devDependencies": {
+    "@commitlint/cli": "^19.2.2",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@types/gh-pages": "^6.1.0",
+    "@types/node": "^20.12.7",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "husky": "^9.0.11",
+    "sass": "^1.75.0",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "browserslist": {
     "production": [
@@ -40,7 +45,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "sass": "^1.34.0"
-  }
+  "packageManager": "pnpm@8.15.7+sha256.50783dd0fa303852de2dd1557cd4b9f07cb5b018154a6e76d0f40635d6cee019"
 }
