@@ -41,12 +41,12 @@ const Header: FC = () => {
         
         </Container>
       </header>
-    {
+    {/* {
       isMenuOpen &&
       <Modal>
         <MainNavigation />
       </Modal>
-    }
+    } */}
     </>
   )
 }

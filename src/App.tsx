@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './assets/styles/style.global.scss';
 import { Layout, AtributionBlock } from './components';
 import {
@@ -10,7 +10,7 @@ import {
 const App = () => {
 
   useEffect(() => {
-    const loader: any = document.getElementById('loader');
+    const loader = document.getElementById('loader');
     loader?.classList.add("offLoader");
     setTimeout(() => loader?.remove(), 1000);
   }, [])

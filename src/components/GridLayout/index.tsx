@@ -1,7 +1,11 @@
-import React, { FC } from 'react';
+import type { ReactNode } from 'react';
 import style from './style.module.scss';
 
-const GridLayout: FC = ({ children }) => (
+type Props = {
+  children: ReactNode,
+}
+
+const GridLayout = ({ children }: Props) => (
   <div className={style.GridLayout}>
     {children}
   </div>
