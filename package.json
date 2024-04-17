@@ -1,23 +1,21 @@
 {
   "name": "easybank-landing-page",
   "version": "2.0.0",
+  "type": "module",
   "private": true,
   "homepage": "https://rodolfomayora.github.io/easybank-landing-page",
   "dependencies": {
     "gh-pages": "^6.1.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1"
+    "react-dom": "^18.2.0"
   },
   "scripts": {
-    "dev": "PORT=3001 react-scripts start",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "prepare": "husky",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "prepare": "husky"
+    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.2.2",
@@ -26,24 +24,16 @@
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
+    "@vitejs/plugin-react": "^4.2.1",
     "husky": "^9.0.11",
     "sass": "^1.75.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vite": "^5.2.9",
+    "vite-plugin-checker": "^0.6.4",
+    "vite-plugin-svgr": "^4.2.0"
   },
   "engines": {
     "node": "18.x"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "packageManager": "pnpm@8.15.7+sha256.50783dd0fa303852de2dd1557cd4b9f07cb5b018154a6e76d0f40635d6cee019"
 }
