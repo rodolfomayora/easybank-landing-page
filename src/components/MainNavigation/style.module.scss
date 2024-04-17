@@ -1,4 +1,4 @@
-@import '../../assets/styles/config';
+@use "#styles/mixins" as mixins;
 
 .MainNavigation {
   display: flex;
@@ -6,7 +6,7 @@
   justify-content: space-between;
   height: 265px;
   padding: 32px;
-  background-color: $white;
+  background-color: var(--color-white);
   border-radius: 4px;
   transform: translateY(-140%);
   will-change: transform;
@@ -16,10 +16,10 @@
     text-decoration: none;
     text-align: center;
     letter-spacing: -0.4px;
-    color: $blue-1;
+    color: var(--color-blue-1);
   }
 
-  @include large {
+  @include mixins.large {
     flex-direction: row;
     justify-content: flex-start;
     height: auto;
@@ -36,7 +36,7 @@
       padding-right: 16px;
       font-size: 14px;
       letter-spacing: 0;
-      color: $blue-2;
+      color: var(--color-blue-2);
       transition: color 0.2s linear;
 
       &:after {
@@ -46,13 +46,13 @@
         left: 0; 
         right: 0;
         height: 4px;
-        background-image: linear-gradient(90deg, $green, $cyan);
+        background-image: linear-gradient(90deg, var(--color-green), var(--color-cyan));
         filter: opacity(0);
         transition: filter 0.2s linear;
       }
 
       &:hover {
-        color: $blue-1;
+        color: var(--color-blue-1);
 
         &:after { filter: opacity(1); }
       }

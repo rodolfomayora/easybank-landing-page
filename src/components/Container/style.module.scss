@@ -1,15 +1,15 @@
-@import '../../assets/styles/config.scss';
+@use "#styles/mixins" as mixins;
 
 .Container {
   margin-left: 25px;
   margin-right: 25px;
 
-  @include medium {
+  @include mixins.medium {
     margin-left: 50px;
     margin-right: 50px;
   }
 
-  @include extraLarge {
+  @include mixins.extraLarge {
     max-width: 1110px;
     margin-left: auto;
     margin-right: auto;

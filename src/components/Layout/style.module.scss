@@ -1,10 +1,10 @@
-@import '../../assets/styles/config.scss';
+@use "#styles/mixins" as mixins;
 
 .MainContent {
   min-height: 100vh;
-  margin-top: $headerHeight;
+  margin-top: var(--header-height);
 
-  @include large {
-    margin-top: $headerHeightDektop;
+  @include mixins.large {
+    margin-top: var(--header-height-dektop);
   }
 }

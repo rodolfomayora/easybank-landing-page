@@ -1,4 +1,4 @@
-@import '../../assets/styles/config';
+@use "#styles/mixins" as mixins;
 
 .GridLayout {
   display: grid;
@@ -7,14 +7,14 @@
   grid-row-gap: 30px;
   justify-items: center;
 
-  @include medium {
+  @include mixins.medium {
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 60px;
     grid-column-gap: 40px;
   }
 
-  @include large {
+  @include mixins.large {
     grid-row-gap: 0;
     grid-column-gap: 30px;
     grid-template-rows: repeat(1, auto);

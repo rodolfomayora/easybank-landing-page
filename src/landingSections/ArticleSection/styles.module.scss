@@ -1,9 +1,8 @@
-@import '../../assets/styles/config.scss';
+@use "#styles/mixins" as mixins;
 
 .ArticleSection {
   padding: 88px 0 80px;
-  background-color: $gray;
-
+  background-color: var(--color-gray);
 
   .sectionTitle {
     margin-bottom: 32px;
@@ -11,11 +10,11 @@
     line-height: 36px;
     font-weight: 400;
     letter-spacing: -0.6px;
-    color: $blue-1;
+    color: var(--color-blue-1);
     text-align: center;
   }
 
-  @include large {
+  @include mixins.large {
     .sectionTitle {
       text-align: left;
       font-size: 40px;

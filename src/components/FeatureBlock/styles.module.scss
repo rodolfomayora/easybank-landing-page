@@ -1,4 +1,4 @@
-@import '../../assets/styles/config';
+@use "#styles/mixins" as mixins;
 
 .FeatureBlock {
   display: flex;
@@ -12,7 +12,7 @@
     font-size: 20px;
     font-weight: 400;
     letter-spacing: -0.5px;
-    color: $blue-1;
+    color: var(--color-blue-1);
   }
 
   .featureDescription {
@@ -22,13 +22,13 @@
     line-height: 24px;
   }
 
-  @include medium {
+  @include mixins.medium {
     align-items: flex-start;
     text-align: left;
     max-width: none;
   }
 
-  @include large {
+  @include mixins.large {
     .featureTittle {
       margin-top: 40px;
       font-size: 24px;

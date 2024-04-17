@@ -1,11 +1,11 @@
-@import '../../assets/styles/config';
+@use "#styles/mixins" as mixins;
 
 .MainSection {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - #{$headerHeight});
-  background-color: $gray;
+  height: calc(100vh - var(--header-height));
+  background-color: var(--color-gray);
 
   .imageBase {
     width: 100%;
@@ -64,7 +64,7 @@
     font-size: 38px;
     line-height: 48px;
     font-weight: 400;
-    color: $blue-1;
+    color: var(--color-blue)-1;
   }
 
   .information {
@@ -75,10 +75,10 @@
   }
 
 
-  @include large {
+  @include mixins.large {
     position: relative;
     flex-direction: row-reverse;
-    height: calc(100vh - #{$headerHeightDektop});
+    height: calc(100vh - var(--header-height-desktop));
     max-height: 900px;
 
     .imageBase {

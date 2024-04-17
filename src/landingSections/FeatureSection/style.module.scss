@@ -1,10 +1,10 @@
-@import '../../assets/styles/config.scss';
+// @import '../../assets/styles/config.scss';
+@use "#styles/mixins" as mixins;
 
 .FeatureSection {
   padding: 66px 0;
-  background-color: $blue-3;
+  background-color: var(--color-blue-3);
   text-align: center;
-
 
   .sectionTitle {
     margin-bottom: 20px;
@@ -12,7 +12,7 @@
     line-height: 36px;
     font-weight: 400;
     letter-spacing: -0.6px;
-    color: $blue-1;
+    color: var(--color-blue-1);
   }
 
   .sectionDescription {
@@ -25,7 +25,7 @@
     line-height: 24px;
   }
 
-  @include large {
+  @include mixins.large {
     padding-top: 106px;
     text-align: left;
 

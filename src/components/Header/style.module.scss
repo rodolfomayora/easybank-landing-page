@@ -1,4 +1,4 @@
-@import '../../assets/styles/config';
+@use "#styles/mixins" as mixins;
 
 .Header {
   position: fixed;
@@ -7,8 +7,8 @@
   left: 0;
   right: 0;
   display: flex;
-  height: $headerHeight;
-  background-color: $white;
+  height: var(--header-height);
+  background-color: var(--color-white);
 
   // container
   & > * {
@@ -25,7 +25,7 @@
 
   .navigationMenu,
   .buttonInvitation {
-    @include hiddenFlexElement;
+    @include mixins.hiddenFlexElement;
   }
 
   .buttonMenu {
@@ -37,18 +37,23 @@
   }
 
   
-  @include medium { height: $headerHeightDektop; }
+  @include mixins.medium {
+    height: var(--header-height-desktop);
+  }
 
 
-  @include large {
-    .navigationMenu { margin-right: -20px; }
+  @include mixins.large {
+    .navigationMenu {
+      margin-right: -20px;
+    }
+
     .navigationMenu,
     .buttonInvitation {
-      @include showFlexElement;
+      @include mixins.showFlexElement;
     }
 
     .buttonMenu {
-      @include hiddenFlexElement;
+      @include mixins.hiddenFlexElement;
     }
   }
 }

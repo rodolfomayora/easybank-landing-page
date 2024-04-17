@@ -1,15 +1,15 @@
-@import '../../assets/styles/config';
+@use "#styles/mixins" as mixins;
 
 .Article {
   border-radius: 8px;
   overflow: hidden;
-  background-color: $white;
+  background-color: var(--color-white);
 
   .articleWrapper {
     display: block;
     text-decoration: none;
 
-    &:hover .title { color: $green; }
+    &:hover .title { color: var(--color-green); }
   }
 
   .imageBase {
@@ -40,7 +40,7 @@
 
   .author {
     font-size: 10px;
-    color: $blue-2;  
+    color: var(--color-blue-2);  
   }
 
   .titleWrapper {
@@ -57,7 +57,7 @@
     padding-top: 12px;
     font-size: 16px;
     font-weight: 400;
-    color: $blue-1;
+    color: var(--color-blue-1);
     letter-spacing: -0.3px;
     line-height: 20px;
     
@@ -76,7 +76,7 @@
     font-size: 13px;
     letter-spacing: -0.2px;
     line-height: 18px;
-    color: $blue-2;  
+    color: var(--color-blue-2);
 
     // truncate and allipsis
     display: -webkit-box;
@@ -85,9 +85,7 @@
     overflow: hidden;
   }
 
-  @include large {
-
-    .overview { padding: 30px 25px 22px; }
+  @include mixins.large {
 
     .imageLayer {
       // equivalent to 200px

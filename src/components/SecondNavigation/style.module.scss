@@ -1,9 +1,9 @@
-@import '../../assets/styles/config';
+@use "#styles/mixins" as mixins;
 
 .SecondNavigation {
   display: flex;
   flex-direction: column;
-  background-color: $transparent;
+  background-color: var(--color-transparent);
 
   .navItem {
     padding-top: 8px;
@@ -13,20 +13,22 @@
     font-size: 15px;
     font-weight: 300;
     line-height: 18px;
-    color: $white;
+    color: var(--color-white);
     transition: color 0.2s linear;
 
-    &:hover { color: $green; }
+    &:hover { color: var(--color-green); }
   }
 
-  @include medium {
+  @include mixins.medium {
     flex-wrap: wrap;
     height: 102px;
 
     .navItem {
       text-align: left;
 
-      &:nth-of-type(n + 4) { margin-left: 128px; }
+      &:nth-of-type(n + 4) {
+        margin-left: 128px;
+      }
     }
   }
 }

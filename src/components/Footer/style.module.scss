@@ -1,9 +1,9 @@
-@import '../../assets/styles/config';
+@use "#styles/mixins" as mixins;
 
 .Footer {
   padding-top: 40px;
   padding-bottom: 45px;
-  background-color: $blue-1;
+  background-color: var(--color-blue-1);
 
   // container
   & > * {
@@ -14,11 +14,11 @@
     justify-items: center;
   }
 
-  .logo > svg > g > path { fill: $white; }
+  .logo > svg > g > path { fill: var(--color-white); }
 
-  .copyright { color: $blue-2; }
+  .copyright { color: var(--color-blue-2); }
 
-  @include medium {
+  @include mixins.medium {
     // container
     & > * {
       grid-template-rows: repeat(4, auto);
@@ -51,7 +51,7 @@
     }
   }
 
-  @include large {
+  @include mixins.large {
     padding-top: 46px;
     padding-bottom: 40px;
 

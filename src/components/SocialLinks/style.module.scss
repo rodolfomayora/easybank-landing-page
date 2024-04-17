@@ -1,4 +1,4 @@
-@import '../../assets/styles/config.scss';
+@use "#styles/mixins" as mixins;
 
 .SocialLinks {
   
@@ -10,10 +10,10 @@
 
     & > path { transition: fill 0.2s linear; }
 
-    &:hover > path { fill: $green; }
+    &:hover > path { fill: var(--color-green); }
   }
 
-  @include large {
+  @include mixins.large {
 
     :first-child ~ * { margin-left: 14px; }
 

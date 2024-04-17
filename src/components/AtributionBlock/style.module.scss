@@ -1,20 +1,18 @@
-@import '../../assets/styles/config';
-
 .Attribution {
   padding-top: 8px;
   padding-bottom: 4px;
   font-size: 11px;
   text-align: center;
-  color: $white;
-  background-color: $green;
+  color: var(--color-white);
+  background-color: var(--color-blue-2);
 
   a {
-    color: $white;
+    color: var(--color-white);
     line-height: 16px;
     margin-left: 4px;
 
     &:hover {
-      color: $blue-1;
+      color: var(--color-blue-1);
     }
 
     &:after {
@@ -34,7 +32,7 @@
     .icon {
       width: 10px;
       height: 10px;
-      fill: $white;
+      fill: var(--color-white);
     }
   }
 }

@@ -6,6 +6,7 @@
   "homepage": "https://rodolfomayora.github.io/easybank-landing-page",
   "dependencies": {
     "gh-pages": "^6.1.1",
+    "modern-normalize": "^2.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
