@@ -2,7 +2,7 @@ import Container from '../Container';
 import SecondNavigation from '../SecondNavigation';
 import ButtonInvitation from '../ButtonInvitation';
 import SocialLinks from '../SocialLinks';
-import { Logo } from '../../assets/img';
+import { Logo } from '#icons/svg';
 import style from './style.module.scss';
 
 const Footer = () => (

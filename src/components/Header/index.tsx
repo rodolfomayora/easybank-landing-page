@@ -3,7 +3,7 @@ import Container from '../Container';
 // import Modal from '../Modal';
 import MainNavigation from '../MainNavigation';
 import ButtonInvitation from '../ButtonInvitation';
-import { Logo, HamburgerIcon, CloseIcon } from '../../assets/img';
+import { Logo, HamburgerIcon, CloseIcon } from '#icons/svg';
 import style from './style.module.scss';
 
 const Header: FC = () => {
@@ -20,7 +20,9 @@ const Header: FC = () => {
     <>
       <header className={style.Header}>
         <Container>
-          <Logo />
+          <a href="/">
+            <Logo />
+          </a>
           
           <div className={style.navigationMenu}>
             <MainNavigation />

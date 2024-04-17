@@ -5,7 +5,7 @@ import {
   BudgetingIncon,
   OnboardingIcon,
   ApiIcon
-} from '../../assets/img';
+} from '#icons/svg';
 import style from './style.module.scss';
 
 const FeatureSection: FC = () => {

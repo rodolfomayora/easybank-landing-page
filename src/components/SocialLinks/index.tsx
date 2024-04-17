@@ -3,8 +3,8 @@ import {
   YoutubeIcon,
   TwitterIcon,
   PinteresIcon,
-  InstagramIcon
-} from '../../assets/img';
+  InstagramIcon,
+} from '#icons/svg';
 import style from './style.module.scss';
 
 const SocialLinks = () => (

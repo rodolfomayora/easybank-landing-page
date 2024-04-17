@@ -4,7 +4,7 @@ type Props = {
   author: string,
   title: string,
   paragraph: string,
-  image: any
+  image: string,
 }
 
 export function Article ({ author, title, paragraph, image }: Props) {

@@ -1,6 +1,5 @@
 import { FC } from 'react';
 import { Container, ButtonInvitation } from '../../components';
-import { mokcups } from '../../assets/img';
 import style from './style.module.scss';
 
 const MainSection: FC = () => (
@@ -9,7 +8,7 @@ const MainSection: FC = () => (
       <div className={style.imageLayer}>
         <div className={style.imageBackground}></div>
         <img className={style.mockups}
-          src={mokcups}
+          src="/img/static/image-mockups.webp"
           alt="App Mockup"
         />
       </div>
@@ -24,7 +23,7 @@ const MainSection: FC = () => (
     </Container>
 
     <img className={style.mockupsDesktop}
-      src={mokcups}
+      src="/img/static/image-mockups.webp"
       alt="App Mockup"
     />
   </section>
