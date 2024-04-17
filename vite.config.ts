@@ -3,6 +3,8 @@ import react from '@vitejs/plugin-react';
 import checker from 'vite-plugin-checker';
 import svgr from 'vite-plugin-svgr';
 
+import path from 'path';
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -13,8 +15,9 @@ export default defineConfig({
   resolve: {
     alias: {
       '#components': '/src/components',
-      '#assets': '/src/assets',
       '#styles': '/src/styles/utils',
+      '#assets': '/src/assets',
+      '#icons': '/src/assets/icons',
     }
   },
   server: {

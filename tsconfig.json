@@ -25,7 +25,8 @@
     "paths": {
       "#components/*": ["./components/*"],
       "#styles/*": ["./styles/utils/*"],
-      "#assets/*": ["./assets"]
+      "#assets/*": ["./assets/*"],
+      "#icons/*": ["./assets/icons/*"],
     }
   },
   "include": ["src"],
