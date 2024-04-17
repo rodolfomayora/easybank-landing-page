@@ -10,6 +10,13 @@ export default defineConfig({
     checker({ typescript: true }),
     svgr(),
   ],
+  resolve: {
+    alias: {
+      '#components': '/src/components',
+      '#assets': '/src/assets',
+      '#styles': '/src/styles/utils',
+    }
+  },
   server: {
     host: '0.0.0.0',
     port: 3001,
