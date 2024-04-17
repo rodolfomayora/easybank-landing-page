@@ -1,10 +1,9 @@
 import { useEffect } from 'react';
-import './assets/styles/style.global.scss';
 import { Layout, AtributionBlock } from './components';
 import {
   MainSection,
   FeatureSection,
-  ActicleSection
+  ArticleSection
 } from './landingSections';
 
 const App = () => {
@@ -20,7 +19,7 @@ const App = () => {
       <Layout>
         <MainSection />
         <FeatureSection />
-        <ActicleSection />
+        <ArticleSection />
       </Layout>
       <AtributionBlock />
     </>

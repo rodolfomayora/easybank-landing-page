@@ -6,17 +6,17 @@ export { default as articleImage3 } from './static/image-plane.jpg'
 export { default as articleImage4 } from './static/image-confetti.jpg';
 
 // SVG
-export { ReactComponent as Logo } from './svg/logo.svg';
-export { ReactComponent as IntroMobile } from './svg/bg-intro-mobile.svg';
-export { ReactComponent as IntroDesktop } from './svg/bg-intro-desktop.svg';
-export { ReactComponent as ApiIcon } from './svg/icon-api.svg';
-export { ReactComponent as BudgetingIncon } from './svg/icon-budgeting.svg';
-export { ReactComponent as CloseIcon } from './svg/icon-close.svg';
-export { ReactComponent as FacebookIcon } from './svg/icon-facebook.svg';
-export { ReactComponent as HamburgerIcon } from './svg/icon-hamburger.svg';
-export { ReactComponent as InstagramIcon } from './svg/icon-instagram.svg';
-export { ReactComponent as OnboardingIcon } from './svg/icon-onboarding.svg';
-export { ReactComponent as OnlineIcon } from './svg/icon-online.svg';
-export { ReactComponent as PinteresIcon } from './svg/icon-pinterest.svg';
-export { ReactComponent as TwitterIcon } from './svg/icon-twitter.svg';
-export { ReactComponent as YoutubeIcon } from './svg/icon-youtube.svg';
+export { default as Logo } from './svg/logo.svg?react';
+export { default as IntroMobile } from './svg/bg-intro-mobile.svg?react';
+export { default as IntroDesktop } from './svg/bg-intro-desktop.svg?react';
+export { default as ApiIcon } from './svg/icon-api.svg?react';
+export { default as BudgetingIncon } from './svg/icon-budgeting.svg?react';
+export { default as CloseIcon } from './svg/icon-close.svg?react';
+export { default as FacebookIcon } from './svg/icon-facebook.svg?react';
+export { default as HamburgerIcon } from './svg/icon-hamburger.svg?react';
+export { default as InstagramIcon } from './svg/icon-instagram.svg?react';
+export { default as OnboardingIcon } from './svg/icon-onboarding.svg?react';
+export { default as OnlineIcon } from './svg/icon-online.svg?react';
+export { default as PinteresIcon } from './svg/icon-pinterest.svg?react';
+export { default as TwitterIcon } from './svg/icon-twitter.svg?react';
+export { default as YoutubeIcon } from './svg/icon-youtube.svg?react';

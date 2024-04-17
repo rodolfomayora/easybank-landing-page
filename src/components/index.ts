@@ -8,6 +8,6 @@ export { default as MainNavigation } from './MainNavigation';
 export { default as SecondNavigation } from './SecondNavigation';
 export { default as ButtonInvitation } from './ButtonInvitation';
 export { default as SocialLinks } from './SocialLinks';
-export { default as FeatureBlock } from './FeatureBlock';
-export { default as Acticle } from './Acticle';
+export { FeatureBlock as FeatureBlock } from './FeatureBlock';
+export { Article as Article } from './Article';
 export { default as AtributionBlock } from './AtributionBlock';

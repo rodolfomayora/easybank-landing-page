@@ -1,4 +1,3 @@
-import React, { FC } from 'react';
 import Container from '../Container';
 import SecondNavigation from '../SecondNavigation';
 import ButtonInvitation from '../ButtonInvitation';
@@ -6,7 +5,7 @@ import SocialLinks from '../SocialLinks';
 import { Logo } from '../../assets/img';
 import style from './style.module.scss';
 
-const Footer: FC = () => (
+const Footer = () => (
   <footer className={style.Footer}>
     <Container>
       <div className={style.logo}>

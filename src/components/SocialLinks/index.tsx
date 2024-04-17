@@ -1,4 +1,3 @@
-import React, { FC } from 'react';
 import {
   FacebookIcon,
   YoutubeIcon,
@@ -8,7 +7,7 @@ import {
 } from '../../assets/img';
 import style from './style.module.scss';
 
-const SocialLinks: FC = () => (
+const SocialLinks = () => (
   <div className={style.SocialLinks}>
     <a href="#0"><FacebookIcon /></a>
     <a href="#0"><YoutubeIcon /></a>

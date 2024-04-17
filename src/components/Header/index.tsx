@@ -1,6 +1,6 @@
-import React, { FC, useState } from 'react';
+import { FC, useState } from 'react';
 import Container from '../Container';
-import Modal from '../Modal';
+// import Modal from '../Modal';
 import MainNavigation from '../MainNavigation';
 import ButtonInvitation from '../ButtonInvitation';
 import { Logo, HamburgerIcon, CloseIcon } from '../../assets/img';

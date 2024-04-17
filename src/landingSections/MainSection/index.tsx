@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Container, ButtonInvitation } from '../../components';
 import { mokcups } from '../../assets/img';
 import style from './style.module.scss';

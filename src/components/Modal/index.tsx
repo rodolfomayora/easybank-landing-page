@@ -1,4 +1,4 @@
-import React, { useState, useEffect, type ReactNode } from 'react';
+import { useState, useEffect, type ReactNode } from 'react';
 import ReactDOM from 'react-dom';
 import style from './style.module.scss';
 

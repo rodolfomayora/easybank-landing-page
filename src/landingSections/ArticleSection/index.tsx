@@ -1,9 +1,9 @@
-import React, { FC } from 'react';
-import { Container, Acticle, GridLayout } from '../../components';
-import style from './style.module.scss';
+import { FC } from 'react';
+import { Container, Article, GridLayout } from '../../components';
+import styles from './styles.module.scss';
 import sampleData from './sampleData';
 
-const ActicleSection: FC = () => {
+const ArticleSection: FC = () => {
 
   const addId = (item: object, index: number) => {
     return {
@@ -15,9 +15,9 @@ const ActicleSection: FC = () => {
   const articles: Array<object> = sampleData.map(addId);
 
   return (
-    <section className={style.ActicleSection}>
+    <section className={styles.ArticleSection}>
       <Container>
-        <h2 className={style.sectionTitle}>Latest Articles</h2>
+        <h2 className={styles.sectionTitle}>Latest Articles</h2>
         <GridLayout>
         {
           articles.map(({
@@ -27,7 +27,7 @@ const ActicleSection: FC = () => {
             paragraph,
             image
           }: any) => (
-            <Acticle
+            <Article
               key={id}
               author={author}
               title={title}
@@ -42,4 +42,4 @@ const ActicleSection: FC = () => {
   )
 }
 
-export default ActicleSection;
+export default ArticleSection;

@@ -1,7 +1,6 @@
-import React, { FC } from 'react';
 import style from './style.module.scss';
 
-const AtributionBlock: FC = () => {
+const AtributionBlock = () => {
   return (
     <div className={style.Attribution}>
       Challenge by
