@@ -33,7 +33,7 @@ export function ArticleSection () {
               author={author}
               title={title}
               paragraph={paragraph}
-              image={image}
+              image={`${import.meta.env.BASE_URL}${image}`}
             />
           ))
         }
