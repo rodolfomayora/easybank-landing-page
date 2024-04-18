@@ -1,30 +1,5 @@
-import React, { useEffect } from 'react';
-import './assets/styles/style.global.scss';
-import { Layout, AtributionBlock } from './components';
-import {
-  MainSection,
-  FeatureSection,
-  ActicleSection
-} from './landingSections';
+import { Home } from './pages/Home';
 
-const App = () => {
-
-  useEffect(() => {
-    const loader: any = document.getElementById('loader');
-    loader?.classList.add("offLoader");
-    setTimeout(() => loader?.remove(), 1000);
-  }, [])
-
-  return (
-    <>
-      <Layout>
-        <MainSection />
-        <FeatureSection />
-        <ActicleSection />
-      </Layout>
-      <AtributionBlock />
-    </>
-  );
+export function App () {
+  return <Home />
 }
-
-export default App;

@@ -1,14 +1,13 @@
-import React, { FC } from 'react';
-import style from './style.module.scss';
+import styles from './styles.module.scss';
 
-const MainNavigation: FC = () => (
-  <nav className={style.MainNavigation}>
-    <a className={style.navItem} href="#0">Home</a>
-    <a className={style.navItem} href="#0">About</a>
-    <a className={style.navItem} href="#0">Contact</a>
-    <a className={style.navItem} href="#0">Blog</a>
-    <a className={style.navItem} href="#0">Careers</a>
-  </nav>
-)
-
-export default MainNavigation;
+export function MainNavigation () {
+  return (
+    <nav className={styles.MainNavigation}>
+      <a className={styles.navItem} href="#0">Home</a>
+      <a className={styles.navItem} href="#0">About</a>
+      <a className={styles.navItem} href="#0">Contact</a>
+      <a className={styles.navItem} href="#0">Blog</a>
+      <a className={styles.navItem} href="#0">Careers</a>
+    </nav>
+  );
+}

@@ -1,0 +1,5 @@
+npx --no-install commitlint --edit "$1"|| {
+  echo "\e[33mPlease run 'pnpm cz' or 'npx cz' to use the local commit helper \e[0m"
+  echo "\n"
+  exit 1
+}

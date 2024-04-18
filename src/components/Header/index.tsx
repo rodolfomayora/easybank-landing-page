@@ -1,31 +1,33 @@
-import React, { FC, useState } from 'react';
-import Container from '../Container';
-import Modal from '../Modal';
-import MainNavigation from '../MainNavigation';
-import ButtonInvitation from '../ButtonInvitation';
-import { Logo, HamburgerIcon, CloseIcon } from '../../assets/img';
-import style from './style.module.scss';
+import { useState } from 'react';
+import { ButtonInvitation } from '#components//ButtonInvitation';
+import { Container } from '#components/Container';
+import { MainNavigation } from '#components/MainNavigation';
+import { Modal } from '#components/Modal';
 
-const Header: FC = () => {
+import { Logo, HamburgerIcon, CloseIcon } from '#icons/svg';
+import styles from './styles.module.scss';
 
+export function Header () {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
 
   const setToggleStyle = (condition: boolean): string => {
     return condition
-      ? `${style.buttonMenu} ${style.active}`
-      : style.buttonMenu;
+      ? `${styles.buttonMenu} ${styles.active}`
+      : styles.buttonMenu;
   }
 
   return (
     <>
-      <header className={style.Header}>
+      <header className={styles.Header}>
         <Container>
-          <Logo />
+          <a href="/">
+            <Logo />
+          </a>
           
-          <div className={style.navigationMenu}>
+          <div className={styles.navigationMenu}>
             <MainNavigation />
           </div>
-          <div className={style.buttonInvitation}>
+          <div className={styles.buttonInvitation}>
             <ButtonInvitation />
           </div>
           
@@ -48,7 +50,5 @@ const Header: FC = () => {
       </Modal>
     }
     </>
-  )
+  );
 }
-
-export default Header;

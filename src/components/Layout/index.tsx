@@ -1,16 +1,22 @@
-import React, { FC } from 'react';
-import style from './style.module.scss';
-import Header from '../Header';
-import Footer from '../Footer';
+import type { ReactNode } from 'react';
+import { AtributionBlock } from '#components/AtributionBlock'
+import { Header } from '#components/Header';
+import { Footer } from '#components/Footer';
+import styles from './styles.module.scss';
 
-const Layout: FC = ({ children }) => (
-  <>
-    <Header />
-    <main className={style.MainContent}>
-      {children}
-    </main>
-    <Footer />
-  </>
-)
+type Props = {
+  children: ReactNode,
+}
 
-export default Layout;
+export function Layout ({ children }: Props) {
+  return (
+    <>
+      <Header />
+      <main className={styles.MainContent}>
+        {children}
+      </main>
+      <Footer />
+      <AtributionBlock />
+    </>
+  );
+}

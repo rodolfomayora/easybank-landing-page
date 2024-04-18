@@ -1,0 +1,5 @@
+@use 'sass:meta';
+
+@layer vendors.normalize {
+  @include meta.load-css('/node_modules/modern-normalize/modern-normalize');
+}

@@ -1,0 +1,27 @@
+@layer defaults.base {
+  html {
+    font-family: 'Public Sans', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: var(--color-blue-2);
+    overflow-x: hidden;
+  }
+  
+  body {
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  img,
+  figure {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button, label, img, a {
+    user-select: none;
+  }
+
+  a {
+    cursor: pointer;
+  }
+}

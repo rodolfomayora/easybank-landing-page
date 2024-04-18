@@ -1,0 +1,59 @@
+@use "#styles/mixins" as mixins;
+
+.Header {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  height: var(--header-height);
+  background-color: var(--color-white);
+
+  // container
+  & > * {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigationMenu {
+    display: flex;
+    align-self: stretch;
+  }
+
+  .navigationMenu,
+  .buttonInvitation {
+    @include mixins.hiddenFlexElement;
+  }
+
+  .buttonMenu {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s linear;
+
+    &.active { transform: rotate(90deg); }
+  }
+
+  
+  @include mixins.medium {
+    height: var(--header-height-desktop);
+  }
+
+
+  @include mixins.large {
+    .navigationMenu {
+      margin-right: -20px;
+    }
+
+    .navigationMenu,
+    .buttonInvitation {
+      @include mixins.showFlexElement;
+    }
+
+    .buttonMenu {
+      @include mixins.hiddenFlexElement;
+    }
+  }
+}

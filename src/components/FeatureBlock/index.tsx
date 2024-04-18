@@ -1,17 +1,17 @@
-import React, { FC } from 'react';
-import FeatureBockProps from './type';
-import style from './style.module.scss';
+import styles from './styles.module.scss';
 
-const FeatureBlock: FC<FeatureBockProps> = ({
-  title,
-  description,
-  icon: Icon
-}) => (
-  <section className={style.FeatureBlock}>
-    <Icon />
-    <h3 className={style.featureTittle}>{title}</h3>
-    <p className={style.featureDescription}>{description}</p>
-  </section>
-)
+type Props = {
+  title: string,
+  description: string,
+  icon: any
+}
 
-export default FeatureBlock;
+export function FeatureBlock ({ title, description, icon: Icon }: Props) {
+  return (
+    <section className={styles.FeatureBlock}>
+      <Icon />
+      <h3 className={styles.featureTittle}>{title}</h3>
+      <p className={styles.featureDescription}>{description}</p>
+    </section>
+  );
+}
