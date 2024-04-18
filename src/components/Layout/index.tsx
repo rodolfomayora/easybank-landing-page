@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { AtributionBlock } from '#components/AtributionBlock'
 import { Header } from '#components/Header';
 import { Footer } from '#components/Footer';
 import styles from './styles.module.scss';
@@ -15,6 +16,7 @@ export function Layout ({ children }: Props) {
         {children}
       </main>
       <Footer />
+      <AtributionBlock />
     </>
   );
 }
