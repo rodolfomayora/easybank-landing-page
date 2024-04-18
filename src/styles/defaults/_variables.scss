@@ -1,0 +1,31 @@
+@use "../utils/breakpoints" as breakpoints;
+
+@layer defaults.variables {
+  :root {
+    // fonts (custom font names)
+    --public-sans: "Public Sans";
+    
+    // Colors
+    // Primary Colors
+    --color-blue-1: hsl(233, 26%, 24%);
+    --color-green : hsl(136, 65%, 51%);
+    --color-cyan  : hsl(192, 70%, 51%);
+
+    // Neutral Colors
+    --color-blue-2: hsl(233, 8%, 62%);
+    --color-blue-3: hsl(220, 16%, 96%); // content
+    --color-gray  : hsl(0, 0%, 98%);    // content
+    --color-white : hsl(0, 0%, 100%);
+
+    // Extra Colors
+    --color-blue-4: hsla(233, 26%, 24%, 0.5);
+    --color-transparent: hsla(233, 26%, 24%, 0.1);
+
+    // Container
+    --min-mobile-width: #{breakpoints.$minMobile};
+    --max-desktop-width: #{breakpoints.$maxDesktop};
+
+    --header-height: 63px;
+    --header-height-desktop: 82PX;
+  }
+}

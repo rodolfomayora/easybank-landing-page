@@ -1,9 +1,8 @@
-import React, { FC } from 'react';
-import style from './style.module.scss';
+import styles from './styles.module.scss';
 
-const AtributionBlock: FC = () => {
+export function AtributionBlock () {
   return (
-    <div className={style.Attribution}>
+    <div className={styles.Attribution}>
       Challenge by
       <a
         href="https://www.frontendmentor.io?ref=challenge"
@@ -24,5 +23,3 @@ const AtributionBlock: FC = () => {
     </div>
   )
 }
-
-export default AtributionBlock;

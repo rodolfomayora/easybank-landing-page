@@ -1,10 +1,14 @@
-import React, { FC } from 'react';
-import style from './style.module.scss';
+import type { ReactNode } from 'react';
+import styles from './styles.module.scss';
 
-const GridLayout: FC = ({ children }) => (
-  <div className={style.GridLayout}>
-    {children}
-  </div>
-)
+type Props = {
+  children: ReactNode,
+}
 
-export default GridLayout;
+export function GridLayout ({ children }: Props) {
+  return (
+    <div className={styles.GridLayout}>
+      {children}
+    </div>
+  );
+}
