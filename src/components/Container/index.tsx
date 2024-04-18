@@ -1,13 +1,13 @@
 import type { ReactNode } from 'react';
-import style from './style.module.scss';
+import styles from './styles.module.scss';
 
 type Props = {
   children: ReactNode
 }
 
-export default function Container ({ children }: Props) {
+export function Container ({ children }: Props) {
   return (
-    <div className={style.Container}>
+    <div className={styles.Container}>
       {children}
     </div>
   );

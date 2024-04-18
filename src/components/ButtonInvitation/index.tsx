@@ -1,10 +1,9 @@
-import { FC } from 'react';
-import style from './style.module.scss';
+import styles from './styles.module.scss';
 
-const ButtonInvitation: FC = () => (
-  <a className={style.ButtonInvitation} href="#0">
-    Request Invite
-  </a>
-)
-
-export default ButtonInvitation;
+export function ButtonInvitation () {
+  return (
+    <a className={styles.ButtonInvitation} href="#">
+      Request Invite
+    </a>
+  );
+}

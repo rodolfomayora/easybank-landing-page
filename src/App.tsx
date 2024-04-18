@@ -1,18 +1,18 @@
-import { useEffect } from 'react';
-import { Layout, AtributionBlock } from './components';
-import {
-  MainSection,
-  FeatureSection,
-  ArticleSection
-} from './landingSections';
+// import { useEffect } from 'react';
+import { Layout } from '#components/Layout';
+import { AtributionBlock } from '#components/AtributionBlock'
 
-const App = () => {
+import { ArticleSection } from './landingSections/ArticleSection';
+import { FeatureSection } from './landingSections/FeatureSection';
+import { MainSection } from './landingSections/MainSection';
 
-  useEffect(() => {
-    const loader = document.getElementById('loader');
-    loader?.classList.add("offLoader");
-    setTimeout(() => loader?.remove(), 1000);
-  }, [])
+export function App () {
+
+  // useEffect(() => {
+  //   const loader = document.getElementById('loader');
+  //   loader?.classList.add("offLoader");
+  //   setTimeout(() => loader?.remove(), 1000);
+  // }, [])
 
   return (
     <>
@@ -25,5 +25,3 @@ const App = () => {
     </>
   );
 }
-
-export default App;

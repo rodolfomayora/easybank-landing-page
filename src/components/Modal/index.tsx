@@ -1,26 +1,14 @@
-import { useState, useEffect, type ReactNode } from 'react';
-import ReactDOM from 'react-dom';
-import style from './style.module.scss';
+import type { ReactNode } from 'react';
+import { createPortal } from 'react-dom';
+import styles from './styles.module.scss';
 
 type Props = {
   children: ReactNode,
 }
 
-const Modal = ({ children }: Props) => {
-  const [reference, setReference] = useState<any>(() => {
-    return document.getElementById('modal');
-  });
-
-  useEffect(() => {
-    return () => setReference(null);
-  }, [reference])
-
-  return ReactDOM.createPortal(
-    <div className={style.Modal}>
-      {children}
-    </div>,
-    reference
+export function Modal ({ children }: Props) {
+  return createPortal(
+    <div className={styles.Modal}>{children}</div>,
+    document.body
   )
 }
-
-export default Modal;

@@ -1,9 +1,10 @@
-import { FC } from 'react';
-import { Container, Article, GridLayout } from '../../components';
+import { Article } from '#components/Article';
+import { Container } from '#components/Container';
+import { GridLayout } from '#components/GridLayout';
 import styles from './styles.module.scss';
 import sampleData from './sampleData';
 
-const ArticleSection: FC = () => {
+export function ArticleSection () {
 
   const addId = (item: object, index: number) => {
     return {
@@ -41,5 +42,3 @@ const ArticleSection: FC = () => {
     </section>
   )
 }
-
-export default ArticleSection;

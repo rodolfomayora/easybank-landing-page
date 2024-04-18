@@ -1,14 +1,15 @@
-import { FC } from 'react';
-import { Container, FeatureBlock, GridLayout } from '../../components';
+import { GridLayout } from '#components/GridLayout';
+import { Container } from '#components/Container';
+import { FeatureBlock } from '#components/FeatureBlock';
 import {
   OnlineIcon,
   BudgetingIncon,
   OnboardingIcon,
   ApiIcon
 } from '#icons/svg';
-import style from './style.module.scss';
+import styles from './styles.module.scss';
 
-const FeatureSection: FC = () => {
+export function FeatureSection () {
   
   const features: Array<any> = [
     {
@@ -38,10 +39,10 @@ const FeatureSection: FC = () => {
   ];
 
   return (
-    <section className={style.FeatureSection}>
+    <section className={styles.FeatureSection}>
       <Container>
-        <h2 className={style.sectionTitle}>Why choose Easybank?</h2>
-        <p className={style.sectionDescription}>
+        <h2 className={styles.sectionTitle}>Why choose Easybank?</h2>
+        <p className={styles.sectionDescription}>
           We leverage Open Banking to turn your bank account into your financial hub. Control your finances like never before
         </p>
         <div>
@@ -62,5 +63,3 @@ const FeatureSection: FC = () => {
     </section>
   )
 }
-
-export default FeatureSection;
