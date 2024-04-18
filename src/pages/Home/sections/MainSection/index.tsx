@@ -3,13 +3,15 @@ import { ButtonInvitation } from '#components/ButtonInvitation';
 import styles from './styles.module.scss';
 
 export function MainSection () {
+  const mockupSource = `${import.meta.env.BASE_URL}/img/static/image-mockups.webp`
+  // const mockupSource = new URL('/img/static/image-mockups.webp', import.meta.url).href;
   return (
     <section className={styles.MainSection}>
       <div className={styles.imageBase}>
         <div className={styles.imageLayer}>
           <div className={styles.imageBackground}></div>
           <img className={styles.mockups}
-            src="/img/static/image-mockups.webp"
+            src={mockupSource}
             alt="App Mockup"
           />
         </div>
@@ -24,7 +26,9 @@ export function MainSection () {
       </Container>
   
       <img className={styles.mockupsDesktop}
-        src="/img/static/image-mockups.webp"
+        // src="/img/static/image-mockups.webp"
+        // src="/easybank-landing-page/img/static/image-mockups.webp"
+        src={mockupSource}
         alt="App Mockup"
       />
     </section>
