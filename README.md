@@ -5,7 +5,7 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./public/screenshot.jpg)
 
 
 ### Links
