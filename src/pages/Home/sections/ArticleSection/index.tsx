@@ -1,6 +1,7 @@
 import { Article } from '#components/Article';
 import { Container } from '#components/Container';
 import { GridLayout } from '#components/GridLayout';
+import { resolvePublicPath } from '#utils/resolvePublicPath';
 import styles from './styles.module.scss';
 import sampleData from './sampleData';
 
@@ -33,7 +34,7 @@ export function ArticleSection () {
               author={author}
               title={title}
               paragraph={paragraph}
-              image={`${import.meta.env.BASE_URL}${image}`}
+              image={resolvePublicPath(image)}
             />
           ))
         }

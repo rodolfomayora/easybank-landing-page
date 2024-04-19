@@ -1,10 +1,10 @@
 import { Container } from '#components/Container';
 import { ButtonInvitation } from '#components/ButtonInvitation';
+import { resolvePublicPath } from '#utils/resolvePublicPath';
 import styles from './styles.module.scss';
 
 export function MainSection () {
-  const mockupSource = `${import.meta.env.BASE_URL}/img/static/image-mockups.webp`
-  // const mockupSource = new URL('/img/static/image-mockups.webp', import.meta.url).href;
+  const mockupSource = resolvePublicPath('/img/static/image-mockups.webp');
   return (
     <section className={styles.MainSection}>
       <div className={styles.imageBase}>
@@ -26,8 +26,6 @@ export function MainSection () {
       </Container>
   
       <img className={styles.mockupsDesktop}
-        // src="/img/static/image-mockups.webp"
-        // src="/easybank-landing-page/img/static/image-mockups.webp"
         src={mockupSource}
         alt="App Mockup"
       />
