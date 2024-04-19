@@ -16,6 +16,7 @@ export default defineConfig({
       '#styles': '/src/styles/utils',
       '#assets': '/src/assets',
       '#icons': '/src/assets/icons',
+      '#utils': '/src/utils/',
     }
   },
   server: {

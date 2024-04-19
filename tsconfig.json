@@ -27,6 +27,7 @@
       "#styles/*": ["./styles/utils/*"],
       "#assets/*": ["./assets/*"],
       "#icons/*": ["./assets/icons/*"],
+      "#utils/*": ["./utils/*"]
     }
   },
   "include": ["src"],
