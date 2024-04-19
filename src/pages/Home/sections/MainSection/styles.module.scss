@@ -20,23 +20,21 @@
 
   .imageBackground {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background:
-      url('../../../../assets/icons/svg/bg-intro-mobile.svg')
-      no-repeat
-      scroll
-      0 0 / cover;
+    inset: 0;
+    background: {
+      image: url('../../../../assets/icons/svg/bg-intro-mobile.svg');
+      repeat: no-repeat;
+      position: 0 0;
+      size: cover;
+    }
   }
 
   .mockups {
     position: absolute;
     left: 50%;
+    bottom: 0;
     transform: translateX(-50%);
     width: 92%;
-    bottom: 0;
   }
 
   .mockupsDesktop { display: none; }
@@ -53,10 +51,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 30px;
     max-width: 560px;
+    padding: {
+      top: 20px;
+      bottom: 30px;
+    }
+    text-align: center;
   }
 
   .mainTitle {
@@ -75,11 +75,11 @@
   }
 
 
-  @include mixins.large {
+  @include mixins.desktop {
     position: relative;
     flex-direction: row-reverse;
-    height: calc(100vh - var(--header-height-desktop));
     max-height: 900px;
+    height: calc(100vh - var(--header-height-desktop));
 
     .imageBase {
       position: absolute;
@@ -101,11 +101,12 @@
       top: 38%;
       transform: translateY(-50%);
       height: 152%;
-      background:
-        url('../../../../assets/icons/svg/bg-intro-desktop.svg')
-        no-repeat
-        scroll
-        0 0 / cover;
+      background: {
+        image: url('../../../../assets/icons/svg/bg-intro-desktop.svg');
+        repeat: no-repeat;
+        position: 0 0;
+        size: cover;
+      }
     }
 
     .mockups { display: none; }
@@ -116,7 +117,9 @@
       right: 0px;
       top: 50%;
       transform: translate(17%, -48%);
-      width: 53%
+      width: 53%;
+      // max-width: 1018px;
+      // width: min(53%, 1018px);
     }
 
     // container

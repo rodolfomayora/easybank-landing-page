@@ -13,7 +13,7 @@
     &:hover > path { fill: var(--color-green); }
   }
 
-  @include mixins.large {
+  @include mixins.desktop {
 
     :first-child ~ * { margin-left: 14px; }
 

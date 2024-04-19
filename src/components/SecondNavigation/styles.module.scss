@@ -6,12 +6,15 @@
   background-color: var(--color-transparent);
 
   .navItem {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 300;
+    padding-block: 8px;
+    text: {
+      decoration: none;
+      align: center;
+    }
+    font: {
+      size: 15px;
+      weight: 300;
+    }
     line-height: 18px;
     color: var(--color-white);
     transition: color 0.2s linear;
@@ -19,7 +22,7 @@
     &:hover { color: var(--color-green); }
   }
 
-  @include mixins.medium {
+  @include mixins.tablet {
     flex-wrap: wrap;
     height: 102px;
 

@@ -1,6 +1,5 @@
 .ButtonInvitation {
   position: relative;
-  cursor: pointer;
   display: inline-block;
   width: 164px;
   text-align: center;
@@ -12,15 +11,13 @@
   background-image: linear-gradient(90deg, var(--color-green), var(--color-cyan));
   border-radius: 22px;
   overflow: hidden;
+  cursor: pointer;
   transition: filter 0.2s linear;
 
   &:before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background-color: var(--color-white);
     filter: opacity(0);
     transition: filter 0.2s linear;

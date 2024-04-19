@@ -9,8 +9,10 @@
 
   .featureTittle {
     margin-top: 30px;
-    font-size: 20px;
-    font-weight: 400;
+    font: {
+      size: 20px;
+      weight: 400;
+    }
     letter-spacing: -0.5px;
     color: var(--color-blue-1);
   }
@@ -22,13 +24,13 @@
     line-height: 24px;
   }
 
-  @include mixins.medium {
+  @include mixins.tablet {
     align-items: flex-start;
     text-align: left;
     max-width: none;
   }
 
-  @include mixins.large {
+  @include mixins.desktop {
     .featureTittle {
       margin-top: 40px;
       font-size: 24px;

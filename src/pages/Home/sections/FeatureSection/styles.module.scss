@@ -2,29 +2,32 @@
 
 .FeatureSection {
   padding: 66px 0;
-  background-color: var(--color-blue-3);
   text-align: center;
+  background-color: var(--color-blue-3);
 
   .sectionTitle {
     margin-bottom: 20px;
-    font-size: 32px;
+    font: {
+      size: 32px;
+      weight: 400;
+    }
     line-height: 36px;
-    font-weight: 400;
     letter-spacing: -0.6px;
     color: var(--color-blue-1);
   }
 
   .sectionDescription {
+    margin: {
+      inline: auto;
+      bottom: 60px;
+    }
     max-width: 325px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 60px;
     font-size: 15px;
     letter-spacing: -0.4px;
     line-height: 24px;
   }
 
-  @include mixins.large {
+  @include mixins.desktop {
     padding-top: 106px;
     text-align: left;
 
@@ -36,8 +39,10 @@
     }
 
     .sectionDescription {
-      margin-bottom: 70px;
-      margin-left: 0;
+      margin: {
+        bottom: 70px;
+        left: 0;
+      }
       max-width: 620px;
       font-size: 18px;
       line-height: 28px;

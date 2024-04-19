@@ -18,16 +18,12 @@
 
   .imageLayer {
     position: relative;
-    // equivalent to 200px
-    padding-top: 61.6%;
+    padding-top: 61.6%; // equivalent to 200px
   }
 
   .imageWrapper {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
   }
 
   .image {
@@ -50,13 +46,12 @@
 
   .title {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     padding-top: 12px;
-    font-size: 16px;
-    font-weight: 400;
+    font: {
+      size: 16px;
+      weight: 400;
+    }
     color: var(--color-blue-1);
     letter-spacing: -0.3px;
     line-height: 20px;
@@ -80,18 +75,18 @@
 
     // truncate and allipsis
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 3; // limit: 3 lines
     -webkit-box-orient: vertical;  
     overflow: hidden;
   }
 
-  @include mixins.large {
-
+  @include mixins.desktop {
     .imageLayer {
-      // equivalent to 200px
-      padding-top: 78%;
+      padding-top: 78%; // equivalent to 200px
     }
 
-    .paragraph { -webkit-line-clamp: 4; }
+    .paragraph {
+      -webkit-line-clamp: 4; // limit: 4 lines
+    }
   }
 }

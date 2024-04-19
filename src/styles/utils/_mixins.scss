@@ -1,60 +1,33 @@
-// @use "../utils/breakpoints" as breakpoints;
+@use "../utils/breakpoints" as breakpoints;
 
-// // helpers
-// @mixin minWith($breakpoint) {
-//   @media only screen and (min-width:$breakpoint) {
-//     @content;
-//   }
-// }
+// responsive helpers
+@mixin minWith($breakpoint) {
+  @media only screen and (min-width:$breakpoint) {
+    @content;
+  }
+}
 
-// @mixin maxWith($breakpoint) {
-//   @media only screen and (max-width:$breakpoint) {
-//     @content;
-//   }
-// }
+@mixin maxWith($breakpoint) {
+  @media only screen and (max-width:$breakpoint) {
+    @content;
+  }
+}
 
-// // mobile first responsive
-// @mixin tablet {
-//   @include minWith(breakpoints.$minTablet) {
-//     @content;
-//   }
-// }
+// mobile first responsive
+@mixin tablet {
+  @include minWith(breakpoints.$minTablet) {
+    @content;
+  }
+}
 
-// @mixin desktop {
-//   @include minWith(breakpoints.$minDesktop) {
-//     @content;
-//   }
-// }
+@mixin desktop {
+  @include minWith(breakpoints.$minDesktop) {
+    @content;
+  }
+}
 
-@import "./breakpoints";
 
 // ORIGINAL to REPLACE
-// Responsive Method: FIRST MOBILE
-@mixin medium {
-  @media screen and (min-width: $medium) {
-    @content;
-  }
-}
-
-@mixin large {
-  @media screen and (min-width: $large) {
-    @content;
-  }
-}
-
-@mixin extraLarge {
-  @media screen and (min-width: $extraLarge) {
-    @content;
-  }
-}
-
-@mixin responsiveExtra($breakpoint) {
-  @media screen and (min-width: $breakpoint) {
-    @content;
-  }
-}
-
-
 // utilities
 @mixin hiddenFlexElement {
   position: fixed;
