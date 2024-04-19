@@ -10,11 +10,11 @@ import styles from './styles.module.scss';
 export function SocialLinks () {
   return (
     <div className={styles.SocialLinks}>
-      <a href="#0"><FacebookIcon /></a>
-      <a href="#0"><YoutubeIcon /></a>
-      <a href="#0"><TwitterIcon /></a>
-      <a href="#0"><PinteresIcon /></a>
-      <a href="#0"><InstagramIcon /></a>
+      <a href="#" aria-label="Facebook"><FacebookIcon /></a>
+      <a href="#" aria-label="Youtuve"><YoutubeIcon /></a>
+      <a href="#" aria-label="Twitter"><TwitterIcon /></a>
+      <a href="#" aria-label="Pinterest"><PinteresIcon /></a>
+      <a href="#" aria-label="Instagram"><InstagramIcon /></a>
     </div>
   );
 }

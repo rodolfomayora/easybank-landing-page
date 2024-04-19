@@ -20,7 +20,7 @@ export function Header () {
     <>
       <header className={styles.Header}>
         <Container>
-          <a href="/">
+          <a href="/" aria-label="Home Page">
             <Logo />
           </a>
           
