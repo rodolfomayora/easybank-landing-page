@@ -1,21 +1,23 @@
 @layer defaults.base {
   html {
-    // font-family: 'Public Sans', Arial, Helvetica, sans-serif;
-    // font-size: 18px;
     font: {
       family: var(--font-public-sans), Arial, Helvetica, sans-serif;
       size: 18px;
     }
     color: var(--color-blue-2);
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
   
   body {
-    min-height: 100vh;
-    overflow-x: hidden;
+    // min-height: 100vh;
+    // overflow-x: hidden;
+    min-height: 100svh;
+
+    background-color: rgb(185, 185, 185);
   }
   
   img {
+    all: inherit;
     max-inline-size: 100%; /* max-width: 100% */
     block-size: auto;      /* height: 100% */
   }
