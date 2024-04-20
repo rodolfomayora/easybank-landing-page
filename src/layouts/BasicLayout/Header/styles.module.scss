@@ -1,0 +1,96 @@
+@use "#styles/mixins" as mixins;
+
+.Header {
+  --mobile-header-height: 64px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background-color: var(--color-white);
+
+  .navigation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--mobile-header-height);
+  }
+
+  .logo {
+    transform: translateY(2px);
+  }
+
+  .desktopMenuWrapper {
+    display: none;
+  }
+
+  .mobileMenuButton {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    aspect-ratio: 1 / 1;
+    appearance: none;
+  }
+
+  .mobileMenuWrapper {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      180deg, var(--color-blue-4) 70%, 
+      var(--color-transparent)
+    );
+
+    content-visibility: hidden;
+    height: 0;
+    padding: 0;
+
+    &[aria-expanded=true] {
+      content-visibility: visible;
+      height: calc(100svh - var(--mobile-header-height));
+      padding-top: 24px;
+    }
+
+    @supports not (content-visibility: hidden) {
+      display: none;
+
+      &[aria-expanded=true] {
+        display: block;
+      }
+    }
+  }
+
+  .buttonWrapper {
+    display: none;
+  }
+
+  @include mixins.tablet {
+    .navigation {
+      height: 80px;
+    }
+
+    .logo {
+      transform: translateY(5px);
+    }
+
+    .desktopMenuWrapper {
+      display: block;
+    }
+
+    .mobileMenuButton,
+    .mobileMenuWrapper {
+      display: none;
+    }
+
+    .buttonWrapper {
+      display: inline-block;
+      transform: translateY(2px);
+    }
+  }
+
+  @include mixins.desktop {
+    .desktopMenuWrapper {
+      margin-left: 22px;
+    }
+  }
+}

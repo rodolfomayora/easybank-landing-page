@@ -1,0 +1,10 @@
+@use "#styles/mixins" as mixins;
+
+.MainContent {
+  min-height: 100vh;
+  margin-top: var(--header-height);
+
+  @include mixins.desktop {
+    margin-top: var(--header-height-dektop);
+  }
+}
