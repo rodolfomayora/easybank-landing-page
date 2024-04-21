@@ -1,29 +1,29 @@
+import { Logo } from '#icons/svg';
 import { ButtonInvitation } from '#components//ButtonInvitation';
 import { Container } from '#components/Container';
-import { SecondNavigation } from '#components/SecondNavigation';
-import { SocialLinks } from '#components/SocialLinks';
-import { Logo } from '#icons/svg';
+import { SocialLinks } from './SocialLinks';
+import { FooterNavigation } from './FooterNavigation';
 import styles from './styles.module.scss';
 
 export function Footer () {
   return (
     <footer className={styles.Footer}>
       <Container>
-        <div className={styles.logo}>
-          <Logo /> 
-        </div>
-        <div>
-          <SocialLinks />
-        </div>
-        <div>
-          <SecondNavigation />
-        </div>
-        <div>
-          <ButtonInvitation />
-        </div>
-        <small className={styles.copyright}>
-          &copy; Easybank. All Rights Reserved
-        </small>
+        <nav className={styles.navigation}>
+          <div className={styles.block1}>
+            <a className={styles.logo} href="/" >
+              <Logo /> 
+            </a>
+            <SocialLinks />
+          </div>
+          <FooterNavigation />
+          <div className={styles.block3}>
+            <ButtonInvitation />
+            <small className={styles.copyright}>
+              &copy; Easybank. All Rights Reserved
+            </small>
+          </div>
+        </nav>
       </Container>
     </footer>
   );

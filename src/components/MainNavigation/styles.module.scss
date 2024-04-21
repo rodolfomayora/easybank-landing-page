@@ -13,13 +13,15 @@
   animation: navDown 0.4s linear 0s 1 normal forwards;
 
   .navItem {
-    text-decoration: none;
-    text-align: center;
+    text: {
+      decoration: none;
+      align: center;
+    }
     letter-spacing: -0.4px;
     color: var(--color-blue-1);
   }
 
-  @include mixins.large {
+  @include mixins.desktop {
     flex-direction: row;
     justify-content: flex-start;
     height: auto;
@@ -32,8 +34,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      padding-left: 16px;
-      padding-right: 16px;
+      padding-inline: 16px;
       font-size: 14px;
       letter-spacing: 0;
       color: var(--color-blue-2);

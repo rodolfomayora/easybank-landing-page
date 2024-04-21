@@ -1,6 +1,8 @@
 .Attribution {
-  padding-top: 8px;
-  padding-bottom: 4px;
+  padding: {
+    top: 8px;
+    bottom: 4px;
+  }
   font-size: 11px;
   text-align: center;
   color: var(--color-white);
@@ -20,18 +22,21 @@
       display: inline-block;
       width: 12px;
       height: 12px;
-      margin-left: 4px;
-      margin-bottom: -2px;
-      background:
-        url('./external-link.svg')
-        scroll
-        no-repeat
-        center / cover;
+      margin: {
+        left: 4px;
+        bottom: -2px;
+      }
+      background: {
+        image: url('./external-link.svg');
+        repeat: no-repeat;
+        position: center;
+        size: cover;
+      }
     }
 
     .icon {
       width: 10px;
-      height: 10px;
+      aspect-ratio: 1 / 1;
       fill: var(--color-white);
     }
   }

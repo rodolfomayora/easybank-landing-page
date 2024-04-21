@@ -1,0 +1,124 @@
+@use "#styles/mixins" as mixins;
+
+.MainSection {
+  background-color: var(--color-gray);
+
+  .imageBlock {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 375 / 282;
+    background: {
+      image: url("/src/assets/icons/svg/bg-intro-mobile.svg");
+      repeat: no-repeat;
+      position: 0 45%;
+      size: cover;
+    }
+    overflow: hidden;
+  }
+
+  .mockupsMobile {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 4%);
+    height: 150%;
+  }
+
+  .introInformation {
+    display: grid;
+    grid-template-columns: min(100%, 560px);
+    justify-content: center;
+    justify-items: center;
+    align-content: start;
+    padding: {
+      top: 40px;
+      bottom: 88px;
+    }
+    text-align: center;
+  }
+
+  .mainTitle {
+    margin-bottom: 15px;
+    font-size: 39px;
+    line-height: 1.22;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    color: var(--color-blue-1);
+  }
+
+  .information {
+    margin-bottom: 32px;
+    font-size: 15px;
+    line-height: 1.66;
+    letter-spacing: -0.2px;
+  }
+
+  .imageBlockBackground,
+  .mockupsDesktop {
+    display: none;
+  }
+
+  @include mixins.tablet {
+    min-height: calc(1024px - var(--desktop-header-height));
+
+    .imageBlock {
+      max-height: 578px;
+      background: {
+        image: url("/src/assets/icons/svg/bg-intro-desktop.svg");
+        position: center bottom;
+        size: 1000px;
+      }
+    }
+  }
+
+  @include mixins.desktop {
+    min-height: auto;
+    height: auto;
+    overflow-x: clip;
+
+    .imageBlock {
+      display: none;
+    }
+
+    .introInformation {
+      position: relative;
+      grid-template-columns: 440px;
+      justify-content: start;
+      justify-items: start;
+      padding-top: 170px;
+      height: 656px;
+      text-align: left;
+    }
+
+    .mainTitle {
+      margin-bottom: 23px;
+      font-size: 54px;
+      font-weight: 400;
+      letter-spacing: 0.2px;
+      word-spacing: -3px;
+      line-height: 1.2;
+    }
+
+    .information {
+      margin-bottom: 35px;
+      font-size: 18px;
+      line-height: 1.56;
+      word-spacing: -0.6px;
+    }
+
+    .imageBlockBackground {
+      display: block;
+      position: absolute;
+      left: max(400px, 41.5%);
+      bottom: 0;
+      transform: translateY(11.5%);
+    }
+
+    .mockupsDesktop {
+      display: block;
+      position: absolute;
+      top: -18.4%;
+      right: -295px;
+    }
+  }
+}

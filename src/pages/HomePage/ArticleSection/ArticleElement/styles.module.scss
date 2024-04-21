@@ -1,0 +1,85 @@
+@use "#styles/mixins" as mixins;
+
+.ArticleElement {
+  border-radius: 5px;
+  background-color: var(--color-white);
+  overflow: hidden;
+
+  .articleWrapper {
+    display: block;
+    text-decoration: none;
+
+    &:hover .title {
+      color: var(--color-green);
+    }
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 329 / 201;
+    object-fit: cover;
+  }
+
+  .overview {
+    display: grid;
+    padding: 29px 30px 35px;
+  }
+
+  .author {
+    font-size: 10px;
+    color: var(--color-blue-2);
+    line-height: 1;
+  }
+
+  .title {
+    margin-top: 13px;
+    font: {
+      size: 16px;
+      weight: 400;
+    }
+    color: var(--color-blue-1);
+    letter-spacing: -0.3px;
+    line-height: 1.28;
+    
+    // truncate and allipsis
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+
+    transition: color 0.2s linear;
+  }
+
+  .paragraph {
+    margin-top: 7px;
+    font-size: 13px;
+    letter-spacing: -0.2px;
+    line-height: 18px;
+    color: var(--color-blue-2);
+
+    // truncate and allipsis
+    display: -webkit-box;
+    -webkit-line-clamp: 3; // limit: 3 lines
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+  }
+
+  @include mixins.desktop {
+    .image {
+      aspect-ratio: 329 / 258;
+    }
+
+    .overview {
+      padding: {
+        inline: 23px;
+        bottom: 24px;
+      }
+    }
+
+    .paragraph {
+      -webkit-line-clamp: 4; // limit: 4 lines
+    }
+  }
+}

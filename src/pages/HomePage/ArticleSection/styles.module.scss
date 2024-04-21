@@ -1,0 +1,32 @@
+@use "#styles/mixins" as mixins;
+
+.ArticleSection {
+  padding: 88px 0 95px;
+  background-color: var(--color-gray);
+
+  .sectionTitle {
+    margin-bottom: 32px;
+    font: {
+      size: 34px;
+      weight: 400;
+    }
+    letter-spacing: -1.3px;
+    word-spacing: -1px;
+    line-height: 1.04;
+    text-align: center;
+    color: var(--color-blue-1);
+  }
+
+  @include mixins.desktop {
+    padding: {
+      top: 91px;
+      bottom: 79px;
+    }
+    .sectionTitle {
+      margin-bottom: 53px;
+      text-align: left;
+      font-size: 41px;
+      letter-spacing: -1.1px;
+    }
+  }
+}

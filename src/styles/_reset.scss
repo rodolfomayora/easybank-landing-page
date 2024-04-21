@@ -1,5 +1,5 @@
 @layer reset {
-  *:not(svg *, img, canvas, video) {
+  *:not(svg, svg *, img, canvas, video) {
     all: unset; // carefull, break media alements, so care elements with :not()
     display: revert;
     font-size: revert;

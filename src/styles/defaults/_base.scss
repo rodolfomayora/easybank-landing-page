@@ -1,27 +1,28 @@
 @layer defaults.base {
   html {
-    font-family: 'Public Sans', Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font: {
+      family: var(--font-public-sans), Arial, Helvetica, sans-serif;
+      size: 18px;
+    }
     color: var(--color-blue-2);
-    overflow-x: hidden;
   }
   
   body {
-    min-height: 100vh;
-    overflow-x: hidden;
+    min-height: 100svh;
   }
   
-  img,
-  figure {
-    max-width: 100%;
-    height: auto;
-  }
-
-  button, label, img, a {
-    user-select: none;
+  img {
+    all: revert;
+    max-inline-size: 100%; /* max-width: 100% */
+    block-size: auto;      /* height: 100% */
   }
 
   a {
     cursor: pointer;
+    line-height: 0;
+  }
+
+  button, label, img, a {
+    user-select: none;
   }
 }
