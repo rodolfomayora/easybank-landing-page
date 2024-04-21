@@ -5,19 +5,16 @@
       size: 18px;
     }
     color: var(--color-blue-2);
-    // overflow-x: hidden;
   }
   
   body {
-    // min-height: 100vh;
-    // overflow-x: hidden;
     min-height: 100svh;
 
-    background-color: rgb(185, 185, 185);
+    background-color: rgb(185, 185, 185); //
   }
   
   img {
-    all: inherit;
+    all: revert;
     max-inline-size: 100%; /* max-width: 100% */
     block-size: auto;      /* height: 100% */
   }
