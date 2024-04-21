@@ -1,14 +1,14 @@
 import { BasicLayout } from "#layouts/BasicLayout";
-// import { ArticleSection } from './ArticleSection';
-// import { FeatureSection } from './FeatureSection';
+import { FeatureSection } from './FeatureSection';
+import { ArticleSection } from './ArticleSection';
 import { MainSection } from './MainSection';
 
 export function HomePage () {
   return (
     <BasicLayout>
       <MainSection />
-      {/* <FeatureSection /> */}
-      {/* <ArticleSection /> */}
+      <FeatureSection />
+      <ArticleSection />
     </BasicLayout>
   );
 }
