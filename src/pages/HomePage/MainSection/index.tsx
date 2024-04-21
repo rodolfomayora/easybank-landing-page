@@ -26,7 +26,7 @@ export function MainSection () {
             src={mockupSource}
             alt="App Mokups"
             width="767"
-            height="969"
+            height="939"
           />
         </div>
       </Container>
