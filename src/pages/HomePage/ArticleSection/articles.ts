@@ -1,4 +1,6 @@
-const sampleData: Array<any> = [
+import type { Article } from "./types";
+
+export const articles: Article[] = [
   {
     author: "Claire Robinson",
     title: "Receive money in any currency with no fees",
@@ -23,6 +25,4 @@ const sampleData: Array<any> = [
     paragraph: "After a lot of hard workd by the whole team, we're excited to launch our closed beta. It's easty to request an invite through the site",
     image: "/img/static/image-confetti.webp",
   }
-]
-
-export default sampleData;
+];
