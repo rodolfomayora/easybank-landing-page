@@ -6,15 +6,7 @@
   padding-inline: 24px;
   max-width: 1110px;
 
-  // margin-inline: 25px;
-
   @include mixins.tablet {
-    // margin-inline: 50px;
     padding-inline: 50px;
   }
-
-  // @include mixins.desktop {
-  //   max-width: 1110px;
-  //   margin-inline: auto;
-  // }
 }
