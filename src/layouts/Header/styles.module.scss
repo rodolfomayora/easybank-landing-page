@@ -1,7 +1,6 @@
 @use "#styles/mixins" as mixins;
 
 .Header {
-  --mobile-header-height: 64px;
   position: sticky;
   z-index: 1;
   top: 0;
@@ -13,10 +12,6 @@
     justify-content: space-between;
     align-items: center;
     height: var(--mobile-header-height);
-  }
-
-  .logo {
-    // transform: translateY(2px);
   }
 
   .desktopMenuWrapper {
@@ -66,11 +61,7 @@
 
   @include mixins.tablet {
     .navigation {
-      height: 80px;
-    }
-
-    .logo {
-      // transform: translateY(5px);
+      height: var(--desktop-header-height);
     }
 
     .desktopMenuWrapper {
@@ -89,6 +80,10 @@
   }
 
   @include mixins.desktop {
+    .logo {
+      margin-top: 5px;
+    }
+    
     .desktopMenuWrapper {
       margin-left: 22px;
     }

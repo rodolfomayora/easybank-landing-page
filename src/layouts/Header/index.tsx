@@ -15,15 +15,12 @@ export function Header () {
     <header className={styles.Header}>
       <Container>
         <nav className={styles.navigation}>
-          <a className={styles.logo}
-            href="/"
-            aria-label="Home Page"
-          >
+          <a href="/" aria-label="Home Page">
             <Logo />
           </a>
 
           <div className={styles.desktopMenuWrapper}>
-          <DesktopNavigation />
+            <DesktopNavigation />
           </div>
           
           <button className={styles.mobileMenuButton}
