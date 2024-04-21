@@ -1,17 +1,17 @@
 @use "#styles/mixins" as mixins;
 
 .FeatureSection {
-  padding: 66px 0;
+  padding-block: 64px;
   text-align: center;
   background-color: var(--color-blue-3);
 
   .sectionTitle {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     font: {
       size: 32px;
       weight: 400;
     }
-    line-height: 36px;
+    line-height: 1.17;
     letter-spacing: -0.6px;
     color: var(--color-blue-1);
   }
@@ -19,16 +19,20 @@
   .sectionDescription {
     margin: {
       inline: auto;
-      bottom: 60px;
+      bottom: 56px;
     }
     max-width: 325px;
     font-size: 15px;
     letter-spacing: -0.4px;
-    line-height: 24px;
+    word-spacing: 1px;
+    line-height: 1.7;
   }
 
   @include mixins.desktop {
-    padding-top: 106px;
+    padding: {
+      top: 106px;
+      bottom: 102px;
+    }
     text-align: left;
 
     .sectionTitle {
@@ -40,13 +44,14 @@
 
     .sectionDescription {
       margin: {
-        bottom: 70px;
+        bottom: 72px;
         left: 0;
       }
       max-width: 620px;
       font-size: 18px;
-      line-height: 28px;
       letter-spacing: -0.3px;
+      word-spacing: 0;
+      line-height: 28px;
     }
   }
 }
