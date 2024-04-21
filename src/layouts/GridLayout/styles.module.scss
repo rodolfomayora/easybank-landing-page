@@ -1,0 +1,20 @@
+@use "#styles/mixins" as mixins;
+
+.GridLayout {
+  display: grid;
+  grid-auto-rows: auto;
+  justify-items: center;
+  row-gap: 30px;
+  list-style-type: none;
+
+  @include mixins.tablet {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 60px;
+  }
+
+  @include mixins.desktop {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 31px;
+  }
+}

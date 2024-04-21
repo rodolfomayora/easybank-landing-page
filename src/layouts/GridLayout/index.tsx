@@ -7,8 +7,8 @@ type Props = {
 
 export function GridLayout ({ children }: Props) {
   return (
-    <div className={styles.GridLayout}>
+    <ul className={styles.GridLayout}>
       {children}
-    </div>
+    </ul>
   );
 }
