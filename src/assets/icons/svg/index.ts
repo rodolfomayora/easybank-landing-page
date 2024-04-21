@@ -1,4 +1,3 @@
-// Static
 export { default as Logo } from './logo.svg?react';
 export { default as IntroMobile } from './bg-intro-mobile.svg?react';
 export { default as IntroDesktop } from './bg-intro-desktop.svg?react';
