@@ -39,13 +39,13 @@ export function Header () {
         </nav>
       </Container>
 
-      <div className={styles.mobileMenuWrapper}
+      <nav className={styles.mobileMenuWrapper}
         aria-expanded={isExpanded}
       >
         <Container>
           <MobileNavigation />
         </Container>
-      </div>
+      </nav>
     </header>
   );
 }

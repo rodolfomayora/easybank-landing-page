@@ -1,0 +1,55 @@
+@use "#styles/mixins" as mixins;
+
+.Footer {
+  background-color: var(--color-blue-1);
+
+  .navigation {
+    display: grid;
+    justify-items: center;
+    row-gap: 32px;
+    padding: {
+      top: 40px;
+      bottom: 45px;
+    }
+  }
+  
+  .logo > svg > g > path { fill: var(--color-white); }
+
+  .block1 {
+    display: grid;
+    justify-items: center;
+    row-gap: 32px;
+  }
+
+  .block3 {
+    display: inline-grid;
+    justify-items: center;
+    row-gap: 28px;
+  }
+
+  @include mixins.tablet {
+    .navigation {
+      grid-template-columns: min-content 40% max-content;
+      justify-content: space-between;
+      justify-items: start;
+      column-gap: 40px;
+      padding-block: 48px;
+    }
+
+    .block1 {
+      justify-items: start;
+      row-gap: 54px;
+    }
+
+    .block3 {
+      justify-self: end;
+      justify-items: end;
+    }
+  }
+
+  @include mixins.desktop {
+    .navigation {
+      grid-template-columns: min-content 43% max-content;
+    }
+  }
+}

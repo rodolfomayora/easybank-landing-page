@@ -1,0 +1,34 @@
+@use "#styles/mixins" as mixins;
+
+.FooterNavigation {
+  display: grid;
+  row-gap: 8px;
+  list-style-type: none;
+  background-color: var(--color-transparent);
+
+  .navLink {
+    display: grid;
+    place-items: center;
+    height: 26px;
+    font: {
+      size: 15px;
+      weight: 300;
+    }
+    text-decoration: none;
+    color: var(--color-white);
+  }
+
+  @include mixins.tablet {
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column dense;
+    column-gap: 40px;
+
+    .navLink {
+      justify-items: start;
+    }
+  }
+
+  @include mixins.desktop {
+    column-gap: 127px;
+  }
+}

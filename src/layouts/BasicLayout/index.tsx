@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { AtributionBlock } from '#components/AtributionBlock'
-import { Header } from './Header';
-import { Footer } from './Footer';
+import { Header } from '#layouts/Header';
+import { Footer } from '#layouts/Footer';
 import styles from './styles.module.scss';
 
 type Props = {
