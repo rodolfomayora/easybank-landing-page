@@ -1,0 +1,57 @@
+@use "#styles/mixins" as mixins;
+
+.FeatureSection {
+  padding-block: 64px;
+  text-align: center;
+  background-color: var(--color-blue-3);
+
+  .sectionTitle {
+    margin-bottom: 14px;
+    font: {
+      size: 32px;
+      weight: 400;
+    }
+    line-height: 1.17;
+    letter-spacing: -0.6px;
+    color: var(--color-blue-1);
+  }
+
+  .sectionDescription {
+    margin: {
+      inline: auto;
+      bottom: 56px;
+    }
+    max-width: 325px;
+    font-size: 15px;
+    letter-spacing: -0.4px;
+    word-spacing: 1px;
+    line-height: 1.7;
+  }
+
+  @include mixins.desktop {
+    padding: {
+      top: 106px;
+      bottom: 102px;
+    }
+    text-align: left;
+
+    .sectionTitle {
+      margin-bottom: 26px;
+      font-size: 40px;
+      line-height: 44px;
+      letter-spacing: -0.8px;
+    }
+
+    .sectionDescription {
+      margin: {
+        bottom: 72px;
+        left: 0;
+      }
+      max-width: 620px;
+      font-size: 18px;
+      letter-spacing: -0.3px;
+      word-spacing: 0;
+      line-height: 28px;
+    }
+  }
+}

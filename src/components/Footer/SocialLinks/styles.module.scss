@@ -1,0 +1,19 @@
+@use "#styles/mixins" as mixins;
+
+.SocialLinks {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 16px;
+
+  svg {
+    width: 24px;
+    height: auto;
+  }
+
+  @include mixins.tablet {
+    column-gap: 12px;
+    svg {
+      width: 21px;
+    }
+  }
+}

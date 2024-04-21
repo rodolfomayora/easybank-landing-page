@@ -3,7 +3,7 @@
 @layer defaults.variables {
   :root {
     // fonts (custom font names)
-    --public-sans: "Public Sans";
+    --font-public-sans: "Public Sans";
     
     // Colors
     // Primary Colors
@@ -25,7 +25,8 @@
     --min-mobile-width: #{breakpoints.$minMobile};
     --max-desktop-width: #{breakpoints.$maxDesktop};
 
-    --header-height: 63px;
-    --header-height-desktop: 82PX;
+    // header
+    --mobile-header-height: 64px;
+    --desktop-header-height: 80px;
   }
 }

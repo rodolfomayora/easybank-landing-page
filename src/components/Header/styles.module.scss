@@ -1,59 +1,91 @@
 @use "#styles/mixins" as mixins;
 
 .Header {
-  position: fixed;
-  z-index: 2;
+  position: sticky;
+  z-index: 1;
   top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  height: var(--header-height);
   background-color: var(--color-white);
 
-  // container
-  & > * {
-    flex-grow: 1;
+  .navigation {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: var(--mobile-header-height);
   }
 
-  .navigationMenu {
-    display: flex;
-    align-self: stretch;
+  .desktopMenuWrapper {
+    display: none;
   }
 
-  .navigationMenu,
-  .buttonInvitation {
-    @include mixins.hiddenFlexElement;
+  .mobileMenuButton {
+    display: grid;
+    place-items: center;
+    width: 24px;
+    aspect-ratio: 1 / 1;
+    appearance: none;
   }
 
-  .buttonMenu {
-    display: flex;
-    align-items: center;
-    transition: transform 0.2s linear;
+  .mobileMenuWrapper {
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    width: 100%;
+    background-image: linear-gradient(
+      180deg, var(--color-blue-4) 70%, 
+      var(--color-transparent)
+    );
 
-    &.active { transform: rotate(90deg); }
-  }
+    content-visibility: hidden;
+    height: 0;
+    padding: 0;
 
-  
-  @include mixins.medium {
-    height: var(--header-height-desktop);
-  }
-
-
-  @include mixins.large {
-    .navigationMenu {
-      margin-right: -20px;
+    &[aria-expanded=true] {
+      content-visibility: visible;
+      height: calc(100svh - var(--mobile-header-height));
+      padding-top: 24px;
     }
 
-    .navigationMenu,
-    .buttonInvitation {
-      @include mixins.showFlexElement;
+    @supports not (content-visibility: hidden) {
+      display: none;
+
+      &[aria-expanded=true] {
+        display: block;
+      }
+    }
+  }
+
+  .buttonWrapper {
+    display: none;
+  }
+
+  @include mixins.tablet {
+    .navigation {
+      height: var(--desktop-header-height);
     }
 
-    .buttonMenu {
-      @include mixins.hiddenFlexElement;
+    .desktopMenuWrapper {
+      display: block;
+    }
+
+    .mobileMenuButton,
+    .mobileMenuWrapper {
+      display: none;
+    }
+
+    .buttonWrapper {
+      display: inline-block;
+      transform: translateY(2px);
+    }
+  }
+
+  @include mixins.desktop {
+    .logo {
+      margin-top: 5px;
+    }
+    
+    .desktopMenuWrapper {
+      margin-left: 22px;
     }
   }
 }

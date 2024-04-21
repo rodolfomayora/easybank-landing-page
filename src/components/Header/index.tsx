@@ -1,54 +1,48 @@
 import { useState } from 'react';
-import { ButtonInvitation } from '#components//ButtonInvitation';
 import { Container } from '#components/Container';
-import { MainNavigation } from '#components/MainNavigation';
-import { Modal } from '#components/Modal';
-
+import { ButtonInvitation } from '#components//ButtonInvitation';
+import { MobileNavigation } from './MobileNavigation';
+import { DesktopNavigation } from './DesktopNavigation';
 import { Logo, HamburgerIcon, CloseIcon } from '#icons/svg';
 import styles from './styles.module.scss';
 
 export function Header () {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-
-  const setToggleStyle = (condition: boolean): string => {
-    return condition
-      ? `${styles.buttonMenu} ${styles.active}`
-      : styles.buttonMenu;
-  }
+  const [isExpanded, setIsExpanded] = useState<boolean>(false);
+  const handleClick = () => setIsExpanded(isExpanded => !isExpanded); 
+  const buttonIcon = isExpanded ? <CloseIcon /> : <HamburgerIcon />;
 
   return (
-    <>
-      <header className={styles.Header}>
-        <Container>
-          <a href="/">
+    <header className={styles.Header}>
+      <Container>
+        <nav className={styles.navigation}>
+          <a href="/" aria-label="Home Page">
             <Logo />
           </a>
-          
-          <div className={styles.navigationMenu}>
-            <MainNavigation />
+
+          <div className={styles.desktopMenuWrapper}>
+            <DesktopNavigation />
           </div>
-          <div className={styles.buttonInvitation}>
+          
+          <button className={styles.mobileMenuButton}
+            type="button"
+            onClick={handleClick}
+          >
+            {buttonIcon}  
+          </button>
+
+          <div className={styles.buttonWrapper}>
             <ButtonInvitation />
           </div>
-          
-          <div className={setToggleStyle(isMenuOpen)}
-            onClick={() => setIsMenuOpen(crr => !crr)}
-          >
-          {
-            isMenuOpen
-            ? <CloseIcon />
-            : <HamburgerIcon />
-          }
-          </div>
-        
+        </nav>
+      </Container>
+
+      <nav className={styles.mobileMenuWrapper}
+        aria-expanded={isExpanded}
+      >
+        <Container>
+          <MobileNavigation />
         </Container>
-      </header>
-    {
-      isMenuOpen &&
-      <Modal>
-        <MainNavigation />
-      </Modal>
-    }
-    </>
+      </nav>
+    </header>
   );
 }
