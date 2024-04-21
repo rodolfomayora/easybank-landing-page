@@ -1,6 +1,6 @@
-import type { Feature } from '..';
-import { FeatureElement } from './Feature';
-import styles from './styles.module.scss';
+import type { Feature } from '../types';
+import { FeatureElement } from '../FeatureElement';
+import { GridLayout } from '#layouts/GridLayout';
 
 type Props = {
   features: Feature[],
@@ -16,8 +16,8 @@ export function FeatureGrid ({ features }: Props) {
   ));
 
   return (
-    <ul className={styles.FeatureGrid}>
+    <GridLayout>
       {featureElements}
-    </ul>
+    </GridLayout>
   );
 }

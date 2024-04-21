@@ -1,7 +1,9 @@
-import type { Feature } from '../..';
+import type { Feature } from '../types';
 import styles from './styles.module.scss';
 
-export function FeatureElement ({ title, description, icon: Icon }: Feature) {
+type Props = Feature;
+
+export function FeatureElement ({ title, description, icon: Icon }: Props) {
   return (
     <li className={styles.Feature}>
       <Icon />
