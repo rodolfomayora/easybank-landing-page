@@ -20,6 +20,7 @@
     // Extra Colors
     --color-blue-4: hsla(233, 26%, 24%, 0.5);
     --color-transparent: hsla(233, 26%, 24%, 0.1);
+    --gradient-background: linear-gradient(90deg, var(--color-green), var(--color-cyan));
 
     // Container
     --min-mobile-width: #{breakpoints.$minMobile};
