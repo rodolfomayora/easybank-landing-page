@@ -64,6 +64,10 @@
       height: var(--desktop-header-height);
     }
 
+    .logo {
+      margin-top: 5px;
+    }
+
     .desktopMenuWrapper {
       display: block;
     }
@@ -75,15 +79,10 @@
 
     .buttonWrapper {
       display: inline-block;
-      transform: translateY(2px);
     }
   }
 
   @include mixins.desktop {
-    .logo {
-      margin-top: 5px;
-    }
-    
     .desktopMenuWrapper {
       margin-left: 22px;
     }

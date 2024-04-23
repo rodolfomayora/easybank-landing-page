@@ -15,7 +15,10 @@ export function Header () {
     <header className={styles.Header}>
       <Container>
         <nav className={styles.navigation}>
-          <a href="/" aria-label="Home Page">
+          <a className={styles.logo}
+            href="/"
+            aria-label="Home Page"
+          >
             <Logo />
           </a>
 
