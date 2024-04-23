@@ -1,0 +1,13 @@
+.SandBox {
+  display: block;
+  width: 100%;
+  min-height: 100svh;
+  // background-color: #ba6161;
+  background-color: #da896e;
+
+  .component {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+}

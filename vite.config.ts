@@ -19,6 +19,7 @@ export default defineConfig({
       '#assets': '/src/assets',
       '#icons': '/src/assets/icons',
       '#utils': '/src/utils/',
+      '#helpers': '/src/helpers/',
     }
   },
   server: {
