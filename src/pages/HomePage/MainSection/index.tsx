@@ -1,13 +1,12 @@
 import { Container } from '#components/Container';
 import { LinkInvitation } from '#components/LinkInvitation';
-import { resolvePublicSources } from '#utils/resolvePublicSources';
 import { IntroDesktopBackground } from '#assets/icons/svg';
 import styles from './styles.module.scss';
 
-export function MainSection () {
-  const imageSource = '/img/static/image-mockups';
-  const { pngSource, webpSource} = resolvePublicSources(imageSource);
+import pngSource from '#assets/img/image-mockups.png';
+import webpSource from '#assets/img/image-mockups.webp';
 
+export function MainSection () {
   return (
     <section className={styles.MainSection}>
       <div className={styles.imageBlock}>
