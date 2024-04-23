@@ -1,20 +1,25 @@
 import { Container } from '#components/Container';
 import { LinkInvitation } from '#components/LinkInvitation';
-import { resolvePublicPath } from '#utils/resolvePublicPath';
+import { resolvePublicSources } from '#utils/resolvePublicSources';
 import { IntroDesktopBackground } from '#assets/icons/svg';
 import styles from './styles.module.scss';
 
 export function MainSection () {
-  const mockupSource = resolvePublicPath('/img/static/image-mockups.webp');
+  const imageSource = '/img/static/image-mockups';
+  const { pngSource, webpSource} = resolvePublicSources(imageSource);
+
   return (
     <section className={styles.MainSection}>
       <div className={styles.imageBlock}>
-        <img className={styles.mockupsMobile}
-          src={mockupSource}
-          alt="App Mokups"
-          width="345"
-          height="423"
-        />
+        <picture>
+          <source type="image/webp" srcSet={webpSource} />
+          <img className={styles.mockupsMobile}
+            src={pngSource}
+            alt="App Mokups"
+            width="345"
+            height="423"
+          />
+        </picture>
       </div>
       <Container>
         <div className={styles.introInformation}>
@@ -22,12 +27,15 @@ export function MainSection () {
           <p className={styles.information}>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more</p>
           <LinkInvitation />
           <IntroDesktopBackground className={styles.imageBlockBackground} />
-          <img className={styles.mockupsDesktop}
-            src={mockupSource}
-            alt="App Mokups"
-            width="767"
-            height="939"
-          />
+          <picture>
+            <source type="image/webp" srcSet={webpSource} />
+            <img className={styles.mockupsDesktop}
+              src={pngSource}
+              alt="App Mokups"
+              width="767"
+              height="939"
+            />
+          </picture>
         </div>
       </Container>
     </section>
