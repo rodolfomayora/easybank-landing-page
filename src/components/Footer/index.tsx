@@ -11,7 +11,7 @@ export function Footer () {
       <Container>
         <nav className={styles.navigation}>
           <div className={styles.block1}>
-            <a className={styles.logo} href="/" aria-label="Home Page">
+            <a className={styles.logo} href="#" aria-label="Home Page">
               <Logo /> 
             </a>
             <SocialLinks />

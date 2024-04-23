@@ -12,8 +12,23 @@
   padding-block: 0;
 
   .navItem {
+    position: relative;
     display: inline-block;
     height: inherit;
+
+    &:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      height: 4px;
+      background: var(--gradient-background);
+      transition: width 0.1s linear;
+    }
+
+    &:hover:before {
+      width: 100%;
+    }
   }
 
   .navLink {

@@ -16,7 +16,7 @@ export function Header () {
       <Container>
         <nav className={styles.navigation}>
           <a className={styles.logo}
-            href="/"
+            href="#"
             aria-label="Home Page"
           >
             <Logo />

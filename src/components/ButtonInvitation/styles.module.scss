@@ -8,7 +8,7 @@
   letter-spacing: 0.3px;
   word-spacing: -1px;
   color: var(--color-white);
-  background-image: linear-gradient(90deg, var(--color-green), var(--color-cyan));
+  background-image: var(--gradient-background);
   border-radius: 22px;
   cursor: pointer;
   transition: filter 0.2s linear;
