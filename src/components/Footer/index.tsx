@@ -1,5 +1,5 @@
 import { Logo } from '#icons/svg';
-import { ButtonInvitation } from '#components//ButtonInvitation';
+import { LinkInvitation } from '#components//LinkInvitation';
 import { Container } from '#components/Container';
 import { SocialLinks } from './SocialLinks';
 import { FooterNavigation } from './FooterNavigation';
@@ -18,7 +18,7 @@ export function Footer () {
           </div>
           <FooterNavigation />
           <div className={styles.block3}>
-            <ButtonInvitation />
+            <LinkInvitation />
             <small className={styles.copyright}>
               &copy; Easybank. All Rights Reserved
             </small>

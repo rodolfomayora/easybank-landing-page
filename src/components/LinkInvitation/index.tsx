@@ -1,8 +1,8 @@
 import styles from './styles.module.scss';
 
-export function ButtonInvitation () {
+export function LinkInvitation () {
   return (
-    <a className={styles.ButtonInvitation} href="#">
+    <a className={styles.LinkInvitation} href="#">
       Request Invite
     </a>
   );

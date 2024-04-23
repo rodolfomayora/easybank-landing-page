@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Container } from '#components/Container';
-import { ButtonInvitation } from '#components//ButtonInvitation';
+import { LinkInvitation } from '#components//LinkInvitation';
 import { MobileNavigation } from './MobileNavigation';
 import { DesktopNavigation } from './DesktopNavigation';
 import { Logo, HamburgerIcon, CloseIcon } from '#icons/svg';
@@ -34,7 +34,7 @@ export function Header () {
           </button>
 
           <div className={styles.buttonWrapper}>
-            <ButtonInvitation />
+            <LinkInvitation />
           </div>
         </nav>
       </Container>
