@@ -7,7 +7,7 @@ export function ArticleSection () {
   return (
     <section className={styles.ArticleSection}>
       <Container>
-        <h2 className={styles.sectionTitle}>Latest Articles</h2>
+        <h2 className={styles.sectionTitle} tabIndex={0}>Latest Articles</h2>
         <ArticleGrid articles={articles} />
       </Container>
     </section>

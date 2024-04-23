@@ -1,13 +1,13 @@
 @use "#styles/mixins" as mixins;
 
 .ArticleElement {
-  border-radius: 5px;
   background-color: var(--color-white);
-  overflow: hidden;
 
   .articleWrapper {
     display: block;
     text-decoration: none;
+    overflow: hidden;
+    border-radius: 5px;
 
     &:hover .title {
       color: var(--color-green);
