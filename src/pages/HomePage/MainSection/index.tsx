@@ -18,6 +18,8 @@ export function MainSection () {
             alt="App Mokups"
             width="345"
             height="423"
+            loading="eager"
+            decoding="sync"
           />
         </picture>
       </div>
@@ -34,6 +36,8 @@ export function MainSection () {
               alt="App Mokups"
               width="767"
               height="939"
+              loading="eager"
+              decoding="sync"
             />
           </picture>
         </div>

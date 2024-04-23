@@ -17,6 +17,8 @@ export function ArticleElement ({ author, title, paragraph, image }: Props) {
             alt={title}
             width="327"
             height="201"
+            loading="lazy"
+            decoding="auto"
           />
         </picture>
         <div className={styles.overview}>
