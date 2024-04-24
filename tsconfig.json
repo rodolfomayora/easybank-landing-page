@@ -30,7 +30,8 @@
       "#assets/*": ["./assets/*"],
       "#icons/*": ["./assets/icons/*"],
       "#utils/*": ["./utils/*"],
-      "#helpers/*": ["./helpers/*"]
+      "#helpers/*": ["./helpers/*"],
+      "#config/*": ["./config/*"]
     }
   },
   "include": ["src"],

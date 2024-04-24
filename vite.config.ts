@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import checker from 'vite-plugin-checker';
 import svgr from 'vite-plugin-svgr';
 
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -20,11 +21,13 @@ export default defineConfig({
       '#icons': '/src/assets/icons',
       '#utils': '/src/utils/',
       '#helpers': '/src/helpers/',
+      '#config': '/src/config/',
     }
   },
   server: {
     host: '0.0.0.0',
     port: 3001,
   },
-  base: '/easybank-landing-page',
+  // base: '/easybank-landing-page', // for Github Pages
+  base: '/', // for Nginx with Docker
 })
