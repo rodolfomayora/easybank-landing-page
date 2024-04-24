@@ -29,6 +29,7 @@ export function Header () {
           <button className={styles.mobileMenuButton}
             type="button"
             onClick={handleClick}
+            aria-expanded={isExpanded}
           >
             {buttonIcon}  
           </button>

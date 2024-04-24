@@ -10,8 +10,14 @@
     height: auto;
   }
 
-  a:hover path {
-    fill: var(--color-green);
+  a {
+    path {
+      transition: fill 0.3s linear;
+    }
+
+    &:hover path {
+      fill: var(--color-green);
+    }
   }
 
   @include mixins.tablet {
