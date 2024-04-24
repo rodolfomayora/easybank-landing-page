@@ -1,32 +1,29 @@
-# version: "3.8"
-
 services:
   # Development Service: docker compose --profile dev up
-  npm-server-dev:
+  easybank-dev:
     build:
       context: .
       target: dev
-    image: npm-server-dev:1.0
-    container_name: npm-server-dev
+    image: easybank-dev:1.0
+    container_name: easybank-dev
     ports:
       - 3001:3001
     volumes:
       - type: bind
         source: .
-        target: /usr/src/app # separated source code app from node_modules
-        # target: /usr/src/app/code # separated source code app from node_modules
-    # profiles:
-    #   - dev
+        target: /usr/src/app
+    profiles:
+      - dev
 
   # Production Service: docker compose --profile prod up
-  # npm-server-prod:
-  #   build:
-  #     context: .
-  #     target: prod  
-  #   image: npm-server-prod:1.0
-  #   container_name: npm-server-prod
-  #   mem_limit: 1024m # good practice for production
-  #   ports:
-  #     - 3002:80
-  #   profiles:
-  #     - prod
+  easybank-prod:
+    build:
+      context: .
+      target: prod  
+    image: easybank-prod:1.0
+    container_name: easybank-prod
+    mem_limit: 1024m # good practice for production
+    ports:
+      - 3002:80
+    profiles:
+      - prod
