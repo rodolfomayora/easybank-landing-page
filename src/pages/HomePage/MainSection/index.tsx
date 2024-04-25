@@ -1,33 +1,44 @@
 import { Container } from '#components/Container';
-import { ButtonInvitation } from '#components/ButtonInvitation';
-import { resolvePublicPath } from '#utils/resolvePublicPath';
-import { IntroDesktopBackground } from '#assets/icons/svg';
+import { LinkInvitation } from '#components/LinkInvitation';
+import { IntroDesktopBackground } from '#icons/svg';
 import styles from './styles.module.scss';
 
+import pngSource from '#assets/img/image-mockups.png';
+import webpSource from '#assets/img/image-mockups.webp';
+
 export function MainSection () {
-  const mockupSource = resolvePublicPath('/img/static/image-mockups.webp');
   return (
     <section className={styles.MainSection}>
       <div className={styles.imageBlock}>
-        <img className={styles.mockupsMobile}
-          src={mockupSource}
-          alt="App Mokups"
-          width="345"
-          height="423"
-        />
+        <picture>
+          <source type="image/webp" srcSet={webpSource} />
+          <img className={styles.mockupsMobile}
+            src={pngSource}
+            alt="App Mokups"
+            width="345"
+            height="423"
+            loading="eager"
+            decoding="sync"
+          />
+        </picture>
       </div>
       <Container>
         <div className={styles.introInformation}>
           <h1 className={styles.mainTitle}>Next generation digital banking</h1>
           <p className={styles.information}>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more</p>
-          <ButtonInvitation />
+          <LinkInvitation />
           <IntroDesktopBackground className={styles.imageBlockBackground} />
-          <img className={styles.mockupsDesktop}
-            src={mockupSource}
-            alt="App Mokups"
-            width="767"
-            height="969"
-          />
+          <picture>
+            <source type="image/webp" srcSet={webpSource} />
+            <img className={styles.mockupsDesktop}
+              src={pngSource}
+              alt="App Mokups"
+              width="767"
+              height="939"
+              loading="eager"
+              decoding="sync"
+            />
+          </picture>
         </div>
       </Container>
     </section>

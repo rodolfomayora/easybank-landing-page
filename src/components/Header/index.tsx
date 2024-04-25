@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Container } from '#components/Container';
-import { ButtonInvitation } from '#components//ButtonInvitation';
+import { LinkInvitation } from '#components//LinkInvitation';
 import { MobileNavigation } from './MobileNavigation';
 import { DesktopNavigation } from './DesktopNavigation';
 import { Logo, HamburgerIcon, CloseIcon } from '#icons/svg';
@@ -15,7 +15,10 @@ export function Header () {
     <header className={styles.Header}>
       <Container>
         <nav className={styles.navigation}>
-          <a href="/" aria-label="Home Page">
+          <a className={styles.logo}
+            href="#"
+            aria-label="Home Page"
+          >
             <Logo />
           </a>
 
@@ -26,12 +29,13 @@ export function Header () {
           <button className={styles.mobileMenuButton}
             type="button"
             onClick={handleClick}
+            aria-expanded={isExpanded}
           >
             {buttonIcon}  
           </button>
 
           <div className={styles.buttonWrapper}>
-            <ButtonInvitation />
+            <LinkInvitation />
           </div>
         </nav>
       </Container>

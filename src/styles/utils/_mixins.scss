@@ -25,20 +25,3 @@
     @content;
   }
 }
-
-
-// ORIGINAL to REPLACE
-// utilities
-@mixin hiddenFlexElement {
-  position: fixed;
-  z-index: -1;
-  width: 0;
-  overflow: hidden;
-}
-
-@mixin showFlexElement {
-  position: static;
-  z-index: 0;
-  width: auto;
-  overflow: auto;
-}

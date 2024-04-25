@@ -25,5 +25,6 @@
 **/values.dev.yaml
 **/build
 **/dist
+**/.github
 LICENSE
 README.md

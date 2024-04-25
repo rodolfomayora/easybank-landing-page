@@ -1,11 +1,8 @@
 // Design limits
-// - Mobile: 375px
-// - Desktop: 1440px
-
-
-// Layout Limits
-$minMobile : 320px;
-$maxDesktop: 1920px;
+// - from: 375px
+// - to  : 1440px
+$minMobile : 375px;
+$maxDesktop: 1440px;
 
 // Mobile First
 $minTablet : 768px;  // medium

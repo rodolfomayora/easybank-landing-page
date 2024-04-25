@@ -29,7 +29,7 @@
 
   @include mixins.tablet {
     .navigation {
-      grid-template-columns: min-content 40% max-content;
+      grid-template-columns: min-content 1fr max-content;
       justify-content: space-between;
       justify-items: start;
       column-gap: 40px;
@@ -44,12 +44,14 @@
     .block3 {
       justify-self: end;
       justify-items: end;
+      row-gap: 24px;
+      padding-top: 1px;
     }
   }
 
   @include mixins.desktop {
     .navigation {
-      grid-template-columns: min-content 43% max-content;
+      grid-template-columns: min-content 42.6% max-content;
     }
   }
 }

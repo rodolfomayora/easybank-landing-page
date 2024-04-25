@@ -13,17 +13,17 @@
 
     // Neutral Colors
     --color-blue-2: hsl(233, 8%, 62%);
-    --color-blue-3: hsl(220, 16%, 96%); // content
-    --color-gray  : hsl(0, 0%, 98%);    // content
+    --color-blue-3: hsl(220, 16%, 96%);
+    --color-gray  : hsl(0, 0%, 98%);
     --color-white : hsl(0, 0%, 100%);
 
     // Extra Colors
     --color-blue-4: hsla(233, 26%, 24%, 0.5);
     --color-transparent: hsla(233, 26%, 24%, 0.1);
+    --gradient-background: linear-gradient(90deg, var(--color-green), var(--color-cyan));
 
     // Container
     --min-mobile-width: #{breakpoints.$minMobile};
-    --max-desktop-width: #{breakpoints.$maxDesktop};
 
     // header
     --mobile-header-height: 64px;

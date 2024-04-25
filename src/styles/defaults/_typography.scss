@@ -4,7 +4,7 @@
     font-family: "Public Sans";
     font-style: normal;
     font-weight: 300;
-    src: url("/fonts/PublicSans/public-sans-v15-latin-ext-300.woff2") format("woff2");
+    src: url("/src/assets/fonts/PublicSans/public-sans-v15-latin-ext-300.woff2") format("woff2");
   }
   
   @font-face {
@@ -12,7 +12,7 @@
     font-family: "Public Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("/fonts/PublicSans/public-sans-v15-latin-ext-regular.woff2") format("woff2");
+    src: url("/src/assets/fonts/PublicSans/public-sans-v15-latin-ext-regular.woff2") format("woff2");
   }
   
   @font-face {
@@ -20,6 +20,6 @@
     font-family: "Public Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("/fonts/PublicSans/public-sans-v15-latin-ext-700.woff2") format("woff2");
+    src: url("/src/assets/fonts/PublicSans/public-sans-v15-latin-ext-700.woff2") format("woff2");
   }
 }
