@@ -23,15 +23,15 @@
     /* custom */
     "baseUrl": "./src",
     "paths": {
+      "#assets/*": ["./assets/*"],
       "#components/*": ["./components/*"],
+      "#config/*": ["./config/*"],
+      "#helpers/*": ["./helpers/*"],
+      "#icons/*": ["./assets/icons/*"],
       "#layouts/*": ["./layouts/*"],
       "#pages/*": ["./pages/*"],
       "#styles/*": ["./styles/utils/*"],
-      "#assets/*": ["./assets/*"],
-      "#icons/*": ["./assets/icons/*"],
-      "#utils/*": ["./utils/*"],
-      "#helpers/*": ["./helpers/*"],
-      "#config/*": ["./config/*"]
+      "#utils/*": ["./utils/*"]
     }
   },
   "include": ["src"],

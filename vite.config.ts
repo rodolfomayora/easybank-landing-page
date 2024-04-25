@@ -13,15 +13,15 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
+      '#assets': '/src/assets',
       '#components': '/src/components',
+      '#config': '/src/config/',
+      '#helpers': '/src/helpers/',
+      '#icons': '/src/assets/icons',
       '#layouts': '/src/layouts',
       '#pages': '/src/pages',
       '#styles': '/src/styles/utils',
-      '#assets': '/src/assets',
-      '#icons': '/src/assets/icons',
       '#utils': '/src/utils/',
-      '#helpers': '/src/helpers/',
-      '#config': '/src/config/',
     }
   },
   server: {
