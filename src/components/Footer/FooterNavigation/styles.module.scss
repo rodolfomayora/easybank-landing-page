@@ -14,8 +14,14 @@
       size: 15px;
       weight: 300;
     }
+    letter-spacing: -0.2px;
     text-decoration: none;
     color: var(--color-white);
+    transition: color 0.3s linear;
+
+    &:hover {
+      color: var(--color-green);
+    }
   }
 
   @include mixins.tablet {

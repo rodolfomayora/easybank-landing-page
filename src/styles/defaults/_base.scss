@@ -1,4 +1,8 @@
 @layer defaults.base {
+  *:focus-visible {
+    outline: solid #111111 4px;
+  }
+
   html {
     font: {
       family: var(--font-public-sans), Arial, Helvetica, sans-serif;
@@ -9,12 +13,13 @@
   
   body {
     min-height: 100svh;
+    min-width: var(--min-mobile-width);
   }
   
   img {
     all: revert;
     max-inline-size: 100%; /* max-width: 100% */
-    block-size: auto;      /* height: 100% */
+    block-size: auto;      /* height: auto */
   }
 
   a {

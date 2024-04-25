@@ -9,4 +9,4 @@
 @use "./defaults/variables";  // CSS variables (Custom Properties)
 @use "./defaults/base";
 
-@layer reset, normalize, defaults;
+@layer reset, vendors, defaults;
