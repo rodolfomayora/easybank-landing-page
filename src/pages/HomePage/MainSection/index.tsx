@@ -1,6 +1,6 @@
 import { Container } from '#components/Container';
 import { LinkInvitation } from '#components/LinkInvitation';
-import { IntroDesktopBackground } from '#assets/icons/svg';
+import { IntroDesktopBackground } from '#icons/svg';
 import styles from './styles.module.scss';
 
 import pngSource from '#assets/img/image-mockups.png';
