@@ -1,13 +1,25 @@
-import { createPortal } from "react-dom";
-import type { ReactNode } from "react";
-import styles from './styles.module.scss';
+// import {  } from 'path/to/component';
+// import {  } from '#components/';
 
-export function SandBox ({ children }: { children: ReactNode }) {
-  return createPortal((
-      <div className={styles.SandBox}>
-        <div className={styles.component}>{children}</div>
+const sandboxStyles = {
+  display: 'block',
+  // display: 'grid',
+  // justifyContent: 'center',
+  // alignContent: 'center',
+  minHeight: '100svh',
+  width: '100%',
+  backgroundColor: '#da896e',
+}
+
+export function SandboxPage () {
+  return (
+    <div style={sandboxStyles}>
+      <div style={{ position: 'relative' }}>
+
+        {/* put component to craft here */}
+        {/* Please, clear changes with GIT after finish to keep sandbox clean */}
+
       </div>
-    ),
-    document.body
+    </div>
   );
 }
