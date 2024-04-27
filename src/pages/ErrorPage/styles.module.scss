@@ -1,0 +1,13 @@
+@use "#styles/mixins" as mixins;
+
+.ErrorPage {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  row-gap: 20px;
+  min-height: calc(100svh - var(--mobile-header-height));
+
+  @include mixins.tablet {
+    min-height: calc(100svh - var(--desktop-header-height));
+  }
+}
