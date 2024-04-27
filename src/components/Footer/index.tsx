@@ -3,6 +3,7 @@ import { LinkInvitation } from '#components//LinkInvitation';
 import { Container } from '#components/Container';
 import { SocialLinks } from './SocialLinks';
 import { FooterNavigation } from './FooterNavigation';
+import { navigateTo } from '#utils/navigateTo';
 import styles from './styles.module.scss';
 
 export function Footer () {
@@ -11,7 +12,10 @@ export function Footer () {
       <Container>
         <nav className={styles.navigation}>
           <div className={styles.block1}>
-            <a className={styles.logo} href="#" aria-label="Home Page">
+            <a className={styles.logo}
+            href={navigateTo("/")}
+            aria-label="Home Page"
+          >
               <Logo /> 
             </a>
             <SocialLinks />

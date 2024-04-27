@@ -4,7 +4,9 @@ import { LinkInvitation } from '#components//LinkInvitation';
 import { MobileNavigation } from './MobileNavigation';
 import { DesktopNavigation } from './DesktopNavigation';
 import { Logo, HamburgerIcon, CloseIcon } from '#icons/svg';
+import { navigateTo } from '#utils/navigateTo';
 import styles from './styles.module.scss';
+
 
 export function Header () {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
@@ -16,7 +18,7 @@ export function Header () {
       <Container>
         <nav className={styles.navigation}>
           <a className={styles.logo}
-            href="#"
+            href={navigateTo("/")}
             aria-label="Home Page"
           >
             <Logo />
