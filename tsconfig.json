@@ -30,6 +30,7 @@
       "#icons/*": ["./assets/icons/*"],
       "#layouts/*": ["./layouts/*"],
       "#pages/*": ["./pages/*"],
+      "#routers/*": ["./routers/*"],
       "#styles/*": ["./styles/utils/*"],
       "#utils/*": ["./utils/*"]
     }
