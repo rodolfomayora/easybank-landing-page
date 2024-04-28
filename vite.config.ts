@@ -20,6 +20,7 @@ export default defineConfig({
       '#icons': '/src/assets/icons',
       '#layouts': '/src/layouts',
       '#pages': '/src/pages',
+      '#routers': '/src/routers',
       '#styles': '/src/styles/utils',
       '#utils': '/src/utils/',
     }

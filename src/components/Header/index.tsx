@@ -1,9 +1,11 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Container } from '#components/Container';
 import { LinkInvitation } from '#components//LinkInvitation';
 import { MobileNavigation } from './MobileNavigation';
 import { DesktopNavigation } from './DesktopNavigation';
 import { Logo, HamburgerIcon, CloseIcon } from '#icons/svg';
+import { resolvePath } from '#utils/resolvePath';
 import styles from './styles.module.scss';
 
 export function Header () {
@@ -15,12 +17,12 @@ export function Header () {
     <header className={styles.Header}>
       <Container>
         <nav className={styles.navigation}>
-          <a className={styles.logo}
-            href="#"
+          <Link className={styles.logo}
+            to={resolvePath("/")}
             aria-label="Home Page"
           >
             <Logo />
-          </a>
+          </Link>
 
           <div className={styles.desktopMenuWrapper}>
             <DesktopNavigation />
