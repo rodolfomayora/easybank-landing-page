@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom';
+import { resolvePath } from '#utils/resolvePath';
 import styles from './styles.module.scss';
-import { navigateTo } from '#utils/navigateTo';
 
 export function DesktopNavigation () {
   return (
     <ul className={styles.DesktopNavigation}>
       <li className={styles.navItem}>
-        <a className={styles.navLink} href={navigateTo("/")}>Home</a>
+        <Link className={styles.navLink} to={resolvePath("/")}>Home</Link>
       </li>
       <li className={styles.navItem}>
         <a className={styles.navLink} href="#">About</a>

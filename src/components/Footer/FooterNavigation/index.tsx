@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
+import { resolvePath } from '#utils/resolvePath';
 import styles from './styles.module.scss';
-import { navigateTo } from '#utils/navigateTo';
 
 export function FooterNavigation () {
   return (
     <ul className={styles.FooterNavigation}>
-      <li><a className={styles.navLink} href={navigateTo("/")}>About Us</a></li>
+      <li><Link className={styles.navLink} to={resolvePath("/")}>About Us</Link></li>
       <li><a className={styles.navLink} href="#">Contact</a></li>
       <li><a className={styles.navLink} href="#">Blog</a></li>
       <li><a className={styles.navLink} href="#">Careers</a></li>
