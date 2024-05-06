@@ -9,6 +9,11 @@ RUN corepack enable
 RUN --mount=type=bind,source=package.json,target=package.json \
     corepack install
 WORKDIR /usr/src/app
+RUN --mount=type=bind,source=package.json,target=package.json \
+    --mount=type=bind,source=pnpm-lock.yaml,target=pnpm-lock.yaml \
+    --mount=type=cache,id=pnpm,target=/pnpm/store \
+    pnpm install
+COPY . .
 
 # Dev STAGE
 FROM base AS dev
@@ -17,12 +22,7 @@ CMD pnpm dev
 
 # Build STAGE
 FROM base as build
-RUN --mount=type=bind,source=package.json,target=package.json \
-    --mount=type=bind,source=pnpm-lock.yaml,target=pnpm-lock.yaml \
-    --mount=type=cache,id=pnpm,target=/pnpm/store \
-    pnpm install
-COPY . .
-RUN pnpm run build
+RUN pnpm build
 
 # # Production STAGE (container image optimization)
 FROM nginx:1.25.4-alpine as prod
