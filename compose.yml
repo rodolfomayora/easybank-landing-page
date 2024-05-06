@@ -1,3 +1,5 @@
+name: easybank
+
 services:
   # Development Service: docker compose --profile dev up
   easybank-dev:
@@ -15,7 +17,7 @@ services:
     profiles:
       - dev
 
-  # Production Service: docker compose --profile prod up
+  # Production Service: docker compose --profile prod build
   easybank-prod:
     build:
       context: .
