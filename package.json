@@ -8,6 +8,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "dev:docker": "docker compose --profile dev up --build",
+    "build:docker": "docker compose --profile prod build",
+    "preview:docker": "docker compose --profile prod up",
     "prepare": "husky",
     "cz": "cz"
   },
