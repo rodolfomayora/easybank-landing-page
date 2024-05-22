@@ -36,6 +36,6 @@
     },
     "types": ["vitest/globals"],
   },
-  "include": ["src"],
+  "include": ["src", "**/*.ts", "**/*.mjs"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
