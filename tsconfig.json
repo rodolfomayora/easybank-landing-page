@@ -33,7 +33,8 @@
       "#routers/*": ["./routers/*"],
       "#styles/*": ["./styles/utils/*"],
       "#utils/*": ["./utils/*"]
-    }
+    },
+    "types": ["vitest/globals"],
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
