@@ -1,5 +1,5 @@
 import { Container } from '#components/Container';
-import { LinkInvitation } from '#components/LinkInvitation';
+import { InvitationLink } from '#components/InvitationLink';
 import { IntroDesktopBackground } from '#icons/svg';
 import styles from './styles.module.scss';
 
@@ -26,7 +26,7 @@ export function MainSection () {
         <div className={styles.introInformation}>
           <h1 className={styles.mainTitle}>Next generation digital banking</h1>
           <p className={styles.information}>Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more</p>
-          <LinkInvitation />
+          <InvitationLink />
           <IntroDesktopBackground className={styles.imageBlockBackground} />
           <picture>
             <source type="image/webp" srcSet={webpSource} />
