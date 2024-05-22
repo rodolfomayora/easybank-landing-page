@@ -1,6 +1,6 @@
 import { Logo } from '#icons/svg';
 import { Link } from 'react-router-dom';
-import { LinkInvitation } from '#components//LinkInvitation';
+import { InvitationLink } from '#components/InvitationLink';
 import { Container } from '#components/Container';
 import { SocialLinks } from './SocialLinks';
 import { FooterNavigation } from './FooterNavigation';
@@ -23,7 +23,7 @@ export function Footer () {
           </div>
           <FooterNavigation />
           <div className={styles.block3}>
-            <LinkInvitation />
+            <InvitationLink />
             <small className={styles.copyright}>
               &copy; Easybank. All Rights Reserved
             </small>
