@@ -8,6 +8,12 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "dev:docker": "docker compose --profile dev up --build --watch",
+    "build:docker": "docker compose --profile prod build",
+    "preview:docker": "docker compose --profile prod up",
+    "test": "vitest --run --reporter verbose",
+    "test:docker": "docker compose run easybank-dev pnpm test",
+    "coverage": "vitest --coverage",
     "prepare": "husky",
     "cz": "cz"
   },
@@ -20,18 +26,24 @@
   "devDependencies": {
     "@commitlint/cli": "^19.2.2",
     "@commitlint/config-conventional": "^19.2.2",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
+    "@testing-library/user-event": "^14.5.2",
     "@types/node": "^20.12.7",
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
     "@vitejs/plugin-react": "^4.2.1",
+    "@vitest/coverage-v8": "^1.6.0",
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.0.11",
+    "jsdom": "^24.0.0",
     "sass": "^1.75.0",
     "typescript": "^5.4.5",
     "vite": "^5.2.9",
     "vite-plugin-checker": "^0.6.4",
-    "vite-plugin-svgr": "^4.2.0"
+    "vite-plugin-svgr": "^4.2.0",
+    "vitest": "^1.6.0"
   },
   "engines": {
     "node": "20.x"

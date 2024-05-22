@@ -2,24 +2,22 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { HomePage } from '#pages/HomePage';
 import { ErrorPage } from '#pages/ErrorPage';
 import { SandboxPage } from '#helpers/SandboxPage';
-import { basePublicPath } from '#config/env';
+import { basePublicPath, isDevelopment } from '#config/env';
 
 const router = createBrowserRouter([
+  // {
+  //   path: '/', // Root
+  //   element: <HomePage />,
+  //   errorElement: <ErrorPage />,
+  // },
   {
-    path: '/', // Root
+    path: basePublicPath, // Root '/'
+    element: <HomePage />,
     errorElement: <ErrorPage />,
   },
-  {
-    path: basePublicPath + '/',
-    element: <HomePage />,
-  },
-  {
-    path: basePublicPath + '/test',
-    element: <HomePage />,
-  },
 
-  // only dev routes
-  import.meta.env.DEV ? {
+  // dev routes
+  isDevelopment ? {
     path: basePublicPath + '/sandbox',
     element: <SandboxPage />,
   } : {},
