@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import { FooterNavigation } from '.';
 import { BrowserRouter } from 'react-router-dom';
+import { FooterNavigation } from '.';
+
 
 describe('Component: FooterNavigation', () => {
   test('Should renders required links', () => {
