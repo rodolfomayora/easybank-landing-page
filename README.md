@@ -18,17 +18,6 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 
 
-### Built with
-
-- Semantic HTML5 markup
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [TypeScript](https://www.typescriptlang.org/) - JS Superset
-- [CSS Modules](https://github.com/css-modules/css-modules) - For Scoped styles
-
-
 ## Author
 
 - Website - [https://rodolfo-mayora-pereda.vercel.app](https://rodolfo-mayora-pereda.vercel.app)
