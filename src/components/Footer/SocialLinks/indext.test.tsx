@@ -1,6 +1,8 @@
 import { render, screen } from '@testing-library/react';
 import { SocialLinks } from '.';
 
+vi.mock('#icons/svg');
+
 describe('Component: SocialLinks', () => {
   test('Should render external links correctly', () => {
     render(<SocialLinks />);

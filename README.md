@@ -30,7 +30,7 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 ---
 
-### Run Developer Server with Docker
+### Run Development Server with Docker
 
 
 1. Just run:
