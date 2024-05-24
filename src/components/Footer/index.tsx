@@ -1,10 +1,10 @@
 import { Logo } from '#icons/svg';
 import { Link } from 'react-router-dom';
+import { resolvePath } from '#utils/resolvePath';
 import { InvitationLink } from '#components/InvitationLink';
 import { Container } from '#components/Container';
 import { SocialLinks } from './SocialLinks';
 import { FooterNavigation } from './FooterNavigation';
-import { resolvePath } from '#utils/resolvePath';
 import styles from './styles.module.scss';
 
 export function Footer () {
