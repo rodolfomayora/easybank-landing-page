@@ -1,5 +1,6 @@
 /// <reference types="vitest" />
 import { defineConfig } from 'vite';
+import { configDefaults } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import checker from 'vite-plugin-checker';
 import svgr from 'vite-plugin-svgr';
@@ -32,7 +33,15 @@ export default defineConfig({
     globals: true,
     environment: 'jsdom',
     setupFiles: './__test__/setupFile.ts',
+    coverage: {
+      exclude: [
+        ...configDefaults.exclude,
+        '**/*.mjs',
+      ]
+    }
   },
+
+
   base: '/easybank-landing-page', // for Github Pages
   // base: '/', // for Nginx with Docker
 });
