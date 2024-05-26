@@ -29,6 +29,10 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 3001,
   },
+  preview: {
+    host: '0.0.0.0',
+    port: 3002,
+  },
   test: {
     globals: true,
     environment: 'jsdom',
@@ -40,8 +44,6 @@ export default defineConfig({
       ]
     }
   },
-
-
   base: '/easybank-landing-page', // for Github Pages
   // base: '/', // for Nginx with Docker
 });
