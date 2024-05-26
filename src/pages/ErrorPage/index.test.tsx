@@ -1,10 +1,11 @@
 import { render, screen } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
 import { ErrorPage } from '.';
+
+vi.mock('vite-react-ssg');
 
 describe('Page: Home', () => {
   test('Should renders all required content', () => {
-    render(<ErrorPage />, { wrapper: BrowserRouter });
+    render(<ErrorPage />);
 
     const mainTitle = screen.getByRole('heading', {
       level: 1,

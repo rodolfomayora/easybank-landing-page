@@ -1,10 +1,11 @@
 import { render, screen } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
 import { HomePage } from '.';
+
+vi.mock('vite-react-ssg');
 
 describe('Page: Home', () => {
   test('Should renders all required sections', () => {
-    render(<HomePage />, { wrapper: BrowserRouter });
+    render(<HomePage />);
 
     const mainTitle = screen.getByRole('heading', {
       level: 1,
