@@ -1,10 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
 import { FooterNavigation } from '.';
 
 describe('Component: FoooterNavigation', () => {
   test('Should renders required links', () => {
-  render(<FooterNavigation />, { wrapper: BrowserRouter });
+  render(<FooterNavigation />);
 
     expect(screen.getByRole('link', { name: /^about us$/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /^contact$/i })).toBeInTheDocument();
@@ -15,7 +14,7 @@ describe('Component: FoooterNavigation', () => {
   });
 
   test('Should renders only internal navigation links', () => {
-    render(<FooterNavigation />, { wrapper: BrowserRouter });
+    render(<FooterNavigation />);
     const links = screen.getAllByRole('link');
     links.forEach((link) => {
       expect(link).toHaveAttribute('href');

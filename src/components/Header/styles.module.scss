@@ -18,19 +18,6 @@
     display: none;
   }
 
-  .mobileMenuButton {
-    display: grid;
-    place-items: center;
-    width: 24px;
-    aspect-ratio: 1 / 1;
-    appearance: none;
-    transition: scale 0.3s linear;
-
-    &[aria-expanded=true] {
-      scale: -1 1;
-    }
-  }
-
   .mobileMenuWrapper {
     position: absolute;
     z-index: 1;
@@ -80,7 +67,7 @@
       display: block;
     }
 
-    .mobileMenuButton,
+    .toggleButtonWrapper,
     .mobileMenuWrapper {
       display: none;
     }
