@@ -1,28 +1,20 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import type { RouteRecord } from 'vite-react-ssg';
 import { HomePage } from '#pages/HomePage';
 import { ErrorPage } from '#pages/ErrorPage';
 import { SandboxPage } from '#helpers/SandboxPage';
 import { basePublicPath, isDevelopment } from '#config/env';
 
-const router = createBrowserRouter([
-  // {
-  //   path: '/', // Root
-  //   element: <HomePage />,
-  //   errorElement: <ErrorPage />,
-  // },
+export const routes: RouteRecord[] = [
   {
-    path: basePublicPath, // Root '/'
+    path: basePublicPath, // Root => '/'
     element: <HomePage />,
+    entry: '#pages/HomePage/index.tsx',
     errorElement: <ErrorPage />,
   },
 
-  // dev routes
+  // development routes
   isDevelopment ? {
     path: basePublicPath + '/sandbox',
     element: <SandboxPage />,
   } : {},
-]);
-
-export function MainRouter () {
-  return <RouterProvider router={router} />
-}
+];
