@@ -1,5 +1,4 @@
 import { Logo } from '#icons/svg';
-import { Link } from 'react-router-dom';
 import { resolvePath } from '#utils/resolvePath';
 import { InvitationLink } from '#components/InvitationLink';
 import { Container } from '#components/Container';
@@ -13,12 +12,12 @@ export function Footer () {
       <Container>
         <nav className={styles.navigation}>
           <div className={styles.block1}>
-            <Link className={styles.logo}
-              to={resolvePath("/")}
+            <a className={styles.logo}
+              href={resolvePath("/")}
               aria-label="Home Page"
             >
               <Logo /> 
-            </Link>
+            </a>
             <SocialLinks />
           </div>
           <FooterNavigation />

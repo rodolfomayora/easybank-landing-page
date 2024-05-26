@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { resolvePath } from '#utils/resolvePath';
 import styles from './styles.module.scss';
 
@@ -7,19 +6,19 @@ export function DesktopNavigation () {
   return (
     <ul className={styles.DesktopNavigation}>
       <li className={styles.navItem}>
-        <Link className={styles.navLink} to={pathToHome}>Home</Link>
+        <a className={styles.navLink} href={pathToHome}>Home</a>
       </li>
       <li className={styles.navItem}>
-        <Link className={styles.navLink} to={pathToHome}>About</Link>
+        <a className={styles.navLink} href={pathToHome}>About</a>
       </li>
       <li className={styles.navItem}>
-        <Link className={styles.navLink} to={pathToHome}>Contact</Link>
+        <a className={styles.navLink} href={pathToHome}>Contact</a>
       </li>
       <li className={styles.navItem}>
-        <Link className={styles.navLink} to={pathToHome}>Blog</Link>
+        <a className={styles.navLink} href={pathToHome}>Blog</a>
       </li>
       <li className={styles.navItem}>
-        <Link className={styles.navLink} to={pathToHome}>Careers</Link>
+        <a className={styles.navLink} href={pathToHome}>Careers</a>
       </li>
     </ul>
   );

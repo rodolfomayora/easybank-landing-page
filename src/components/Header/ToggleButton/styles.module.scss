@@ -1,0 +1,13 @@
+.ToggleButton {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  aspect-ratio: 1 / 1;
+  appearance: none;
+  cursor: pointer;
+  transition: scale 0.3s linear;
+
+  &[aria-expanded=true] {
+    scale: -1 1;
+  }
+}

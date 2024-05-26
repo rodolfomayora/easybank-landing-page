@@ -1,10 +1,9 @@
 import { render, screen } from '@testing-library/react';
-import { BrowserRouter } from 'react-router-dom';
 import { DesktopNavigation } from '.';
 
 describe('Component: DesktopNavigation', () => {
   test('Should renders al required internal navigation links', () => {
-    render(<DesktopNavigation />, { wrapper: BrowserRouter });
+    render(<DesktopNavigation />);
     
     expect(screen.getByRole('link', { name: /^home$/i })).toBeInTheDocument();
     expect(screen.getByRole('link', { name: /^about$/i })).toBeInTheDocument();
@@ -14,7 +13,7 @@ describe('Component: DesktopNavigation', () => {
   });
 
   test('Should renders only internal navigation links', () => {
-    render(<DesktopNavigation />, { wrapper: BrowserRouter });
+    render(<DesktopNavigation />);
     const links = screen.getAllByRole('link');
     links.forEach((link) => {
       expect(link).toHaveAttribute('href');

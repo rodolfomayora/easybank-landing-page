@@ -5,8 +5,8 @@
   "private": true,
   "homepage": "https://rodolfomayora.github.io/easybank-landing-page",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "vite-react-ssg dev",
+    "build": "tsc && vite-react-ssg build",
     "preview": "vite preview",
     "dev:docker": "docker compose --profile dev up --build --watch",
     "build:docker": "docker compose --profile prod build",
@@ -35,6 +35,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "@vitest/coverage-v8": "^1.6.0",
     "commitizen": "^4.3.0",
+    "critters": "^0.0.22",
     "cz-conventional-changelog": "^3.3.0",
     "husky": "^9.0.11",
     "jsdom": "^24.0.0",
@@ -43,6 +44,7 @@
     "vite": "^5.2.9",
     "vite-plugin-checker": "^0.6.4",
     "vite-plugin-svgr": "^4.2.0",
+    "vite-react-ssg": "^0.6.2",
     "vitest": "^1.6.0"
   },
   "engines": {
