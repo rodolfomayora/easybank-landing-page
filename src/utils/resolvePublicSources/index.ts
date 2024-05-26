@@ -1,4 +1,5 @@
-import { resolvePath } from '#utils/resolvePath';
+// import { resolvePath } from '#utils/resolvePath';
+import { basePublicPath } from '#config/env';
 
 type PublicSources = {
   webpSource: string,
@@ -9,7 +10,8 @@ type PublicSources = {
 
 export function resolvePublicSources (publicSource: string): PublicSources {
   const [source] = publicSource.split('.');
-  const resolvedSource = resolvePath(source);
+  // const resolvedSource = resolvePath(source);
+  const resolvedSource = basePublicPath + source;
   return {
     webpSource: `${resolvedSource}.webp`,
     pngSource : `${resolvedSource}.png`,
