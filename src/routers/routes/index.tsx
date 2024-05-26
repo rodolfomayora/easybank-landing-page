@@ -6,6 +6,12 @@ import { basePublicPath, isDevelopment } from '#config/env';
 
 export const routes: RouteRecord[] = [
   {
+    path: '/',
+    element: <HomePage />,
+    entry: '#pages/HomePage/index.tsx',
+    errorElement: <ErrorPage />,
+  },
+  {
     path: basePublicPath, // Root => '/'
     element: <HomePage />,
     entry: '#pages/HomePage/index.tsx',
