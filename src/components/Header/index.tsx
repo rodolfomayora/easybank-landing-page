@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { Container } from '#components/Container';
 import { InvitationLink } from '#components/InvitationLink';
 import { MobileNavigation } from './MobileNavigation';
@@ -11,17 +10,17 @@ import styles from './styles.module.scss';
 
 export function Header () {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
-  const handleClick = () => setIsExpanded(isExpanded => !isExpanded); 
+  const handleClick = () => setIsExpanded(isExpanded => !isExpanded);
   return (
     <header className={styles.Header}>
       <Container>
         <nav className={styles.navigation}>
-          <Link className={styles.logo}
-            to={resolvePath("/")}
+          <a className={styles.logo}
+            href={resolvePath("/")}
             aria-label="Home Page"
           >
             <Logo />
-          </Link>
+          </a>
 
           <div className={styles.desktopMenuWrapper}>
             <DesktopNavigation />
