@@ -11,6 +11,7 @@ export function ToggleButton ({ isExpanded, ...props }: Props) {
   return (
     <button className={styles.ToggleButton}
       type="button"
+      aria-label="Toggle Mobile Menu"
       aria-expanded={isExpanded}
       {...props}
     >
